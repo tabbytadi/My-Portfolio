@@ -11,43 +11,46 @@
 
 <body>
   <!--Header section-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed;  z-index: 1000; left:0; right: 0;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"> <img src="./images/mePfp2.jpg" id="profilePic"
-          alt="my profile picture">Adelina&#39;s Online Resume</a>
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="./images/mePfp2.jpg" id="profilePic" alt="my profile picture">
+          Adelina's Online Resume
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about-me">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu">
-
-              <li><a class="dropdown-item" href="#">My Portfolio</a></li>
+              <li><a class="dropdown-item" href="#portfolio">My Portfolio</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Project &#35;1</a></li>
-              <li><a class="dropdown-item" href="#">Project &#35;2</a></li>
-              <li><a class="dropdown-item" href="#">Project &#35;3</a></li>
-              <li><a class="dropdown-item" href="#">Project &#35;4</a></li>
+              <li><a class="dropdown-item" href="#">Project #1</a></li>
+              <li><a class="dropdown-item" href="#">Project #2</a></li>
+              <li><a class="dropdown-item" href="#">Project #3</a></li>
+              <li><a class="dropdown-item" href="#">Project #4</a></li>
             </ul>
           </li>
         </ul>
-        <button class="btn-hover color-purple" type="submit" href="#contact">Contact me</button>
+        <button class="btn-hover color-purple" type="submit">Contact Me</button>
       </div>
     </div>
   </nav>
@@ -115,7 +118,7 @@
 
 
   <!--Portfolio Section-->
-  <div class="album py-5 bg-body-tertiary">
+  <div class="album py-5 bg-body-tertiary" id="portfolio">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -313,6 +316,7 @@
       </div>
     </div>
   </div>
+
 
   <!--Contact Page -->
   <section class="contact" id="contact">
