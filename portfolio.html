@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adelina&#39;s Online Resume</title>
+  <title> Adelina&#39;s Online Resume</title>
   <link rel="stylesheet" href="styles/portfolio.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link activee" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about-me">About</a>
@@ -39,14 +39,25 @@
               Projects
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#portfolio">My Portfolio</a></li>
+              <li><a class="dropdown-item" href="#portfolio">My Latest Projects</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Project #1</a></li>
-              <li><a class="dropdown-item" href="#">Project #2</a></li>
-              <li><a class="dropdown-item" href="#">Project #3</a></li>
-              <li><a class="dropdown-item" href="#">Project #4</a></li>
+              <li><a class="dropdown-item" target=”_blank” href="https://tabbytadi.github.io/TinDog/">TinDog</a></li>
+              <li><a class="dropdown-item" target=”_blank” href="https://tabbytadi.github.io/Login-Page/login">Login
+                  Page</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://tabbytadi.github.io/YouTube-clone/youtube.html">YouTube Clone</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html">Curves</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://tabbytadi.github.io/Simple-Moving-Company-Website/">Moving Company</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp">Tic Tac Toe</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://tabbytadi.github.io/Mondrian-Painting/">Mondrian Painting</a></li>
+              <li><a class="dropdown-item" target=”_blank”
+                  href="https://github.com/tabbytadi/Hangman-Python/tree/main">Hangman game</a></li>
             </ul>
           </li>
         </ul>
@@ -62,7 +73,7 @@
       <div class="home-content">
         <h3>Hello, I am</h3>
         <h1>Adelina Stankova</h1>
-        <h3>And i am a <span>Frontend Developer!</span></h3>
+        <h3>And I am a <span>Frontend Developer!</span></h3>
         <p>Transforming ideas into captivating digital experiences! With a passion for innovation and expertise in
           frontend development, I'm your go-to partner for crafting immersive and user-friendly web solutions that
           resonate with your audience. </p>
@@ -100,12 +111,12 @@
   <section class="about" id="about-me">
     <div class="about-container">
       <div class="home-img">
-        <img class="me" src="images/me.jpg" alt="A picture of Adelina">
+        <img class="me" src=" images/me.jpg" alt="A picture of Adelina">
       </div>
-      <div>
+      <div class="text">
         <h2>About <span>Me</span></h2>
         <h3>Frontend Developer</h3>
-        <p>"Hello, I'm Adelina, a dedicated Computer Science student with a never-ending curiosity for the tech world. I
+        <p>Hello, I'm Adelina, a dedicated Computer Science student with a never-ending curiosity for the tech world. I
           thrive on the dynamic nature of web development, constantly seeking opportunities to expand my skills and push
           boundaries. From designing captivating user interfaces to delving into complex coding challenges, I am
           passionate about creating digital experiences that leave a lasting impression. With a commitment to lifelong
@@ -117,198 +128,220 @@
   </section>
 
 
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <br id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="portfolio-container">
+
+      <div class="portfolio-box">
+        <img src="./images/skills_img/webDesign.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lortetur adipisicing elit. Omnis vitae nam animiatur provident molestias.</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./images/skills_img/webDesign.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnism. </p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="./images/skills_img/webDesign.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitami col.</p>
+          <a href="#"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!--Portfolio Section-->
-  <div class="album py-5 bg-body-tertiary" id="portfolio">
-    <div class="container">
+  <div class="album py-5 bg-body-tertiary">
+    <br id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
 
+    <div class="porfolio-container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/TinDog_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+              height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> TinDog </h4>
+              <hr>
+              <p class="card-text">This is a site inspired from a popular dating app but it&#39;s for your dog.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/TinDog?tab=readme-ov-file"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/TinDog/"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/loginPage_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+              height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Login Page </h4>
+              <hr>
+              <p class="card-text">An aesthetic and easy to change and customize login page.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/Login-Page"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/Login-Page/login"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/YouTube_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+              height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> YouTube Clone </h4>
+              <hr>
+              <p class="card-text">This is a YouTube clone that implements all the features of a home page.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/YouTube-clone?tab=readme-ov-file"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/curves_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+              height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Beautiful Curves </h4>
+              <hr>
+              <p class="card-text">An application&#44; which showcases different ways to implement beautiful curves for
+                any
+                website.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/Beautiful-Curves-for-your-Website"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/movingCompany_project.jpg" class="bd-placeholder-img card-img-top"
+              width="100%" height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Moving Company </h4>
+              <hr>
+              <p class="card-text">A moving company website&#44; providing insight on their services with text and
+                carousel images.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/Simple-Moving-Company-Website"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/Simple-Moving-Company-Website/"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/tictactoeCplusplus_project.jpg" class="bd-placeholder-img card-img-top"
+              width="100%" height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Tic Tac Toe </h4>
+              <hr>
+              <p class="card-text">Tis is a Tic Tac Toe simulation made in C&#43;&#43; which allows users to play a
+                fully developed and immersive game.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">C&#43;&#43;</small>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/mondrian_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+              height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Mondrian Composition &#8470;3</h4>
+              <hr>
+              <p class="card-text">This is a simple website which recreates a famous Mondrian Painting with code.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/Mondrian-Painting"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
+                  <a href="https://tabbytadi.github.io/Mondrian-Painting/"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Live</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">HTML, CSS</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
+        <div class="col mb-5">
+          <div class="card">
+            <img src="./images/project_img/hangmanPython_project.jpg" class="bd-placeholder-img card-img-top"
+              width="100%" height="225" alt="Your Image">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h4> Hangman </h4>
+              <hr>
+              <p class="card-text">A cross-platform GUI application of a hangman game made with wxPython. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
+                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                    target=”_blank”>Source</a>
                 </div>
-                <small class="text-body-secondary">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-body-secondary">9 mins</small>
+                <small class="text-body-secondary">Python</small>
               </div>
             </div>
           </div>
@@ -338,8 +371,6 @@
       <input type="submit" id="send-message" class="btn-hover color-purple" value="Send Message">
     </form>
   </section>
-
-
 
 
 
