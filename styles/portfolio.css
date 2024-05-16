@@ -58,7 +58,7 @@ section {
 
 /* Home Style */
 .home {
-  padding-top: 60px;
+  padding-top: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +132,7 @@ section {
 }
 
 
+
 /* Button Styling */
 .btn-hover {
   padding: 0px 10px;
@@ -199,6 +200,7 @@ section {
 /* About Style */
 .about {
   background-color: rgb(248, 249, 250);
+  padding-bottom: 3vw;
 }
 
 .about-container {
@@ -251,36 +253,26 @@ section {
   }
 }
 
-
-
-
-
 #read-more {
   padding: 1vw 3vw;
   text-decoration: none;
 }
 
+
 /* Skills Style */
 .skills-section {
   padding-top: 5vw;
+  padding-bottom: 3.5vw;
 }
 
-.portfolio {
-  background: var(--second-bg-color);
-}
-
-.portfolio h2 {
-  margin-bottom: 12rem;
-}
-
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+.skills-container {
+  display: flex;
+  justify-content: center;
   gap: 2.5rem;
+  padding-bottom: 6vw;
 }
 
-.portfolio-container .portfolio-box {
+.skills-container .skills-box {
   position: relative;
   border-radius: 2rem;
   box-shadow: 0 0 1rem var(--bg-color);
@@ -288,16 +280,16 @@ section {
   display: flex;
 }
 
-.portfolio-box img {
-  width: 100%;
+.skills-box img {
+  height: 450px;
   transition: .5s ease;
 }
 
-.portfolio-box:hover img {
+.skills-box:hover img {
   transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer {
+.skills-box .skills-layer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -314,44 +306,57 @@ section {
   transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.skills-box:hover .skills-layer {
   transform: translateY(0);
 }
 
-.portfolio-layer h4 {
-  font-size: 3rem;
+.skills-layer h4 {
+  font-size: 2.5rem;
+  color: #faf5fe;
+  text-shadow: 0 0 10px #764ba2;
+  margin-top: 2.5rem;
+  margin-bottom: .8rem;
 }
 
-.portfolio-layer p {
+.skills-layer p,
+.skills-layer ul {
+  color: #f4e8ff;
+  text-shadow: 0 0 10px #764ba2;
+}
+
+.skills-layer p {
+  font-size: 1.35rem;
+  margin-bottom: 0.3rem;
+  width: 150%;
+}
+
+.skills-layer .programming {
   font-size: 1.6rem;
-  margin: .3rem 0 1rem;
+  text-align: center;
 }
 
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
+.skills-layer ul {
+  font-size: 1.3rem;
+  font-style: italic;
+  list-style: none;
+  padding: 0;
 }
 
-.portfolio-layer a i {
-  font-size: 1.6rem;
-  color: var(--second-bg-color);
+.skills-section a {
+  font-size: 1rem;
+}
+
+#explore-more {
+  padding: 1.5vw 3vw;
+  text-decoration: none;
 }
 
 
 
 /* Portfolio Style */
-#portfolio {
-  padding: 7vw;
-}
-
-.porfolio-container {
-  margin-left: 1vw;
-  margin-right: 1vw;
+.album {
+  padding-right: 2vw;
+  padding-left: 2vw;
 }
 
 .heading {
@@ -362,6 +367,7 @@ section {
 }
 
 .card {
+  height: 500px;
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -401,6 +407,7 @@ section {
 .card:hover {
   box-shadow: 0 0 12px #8E37D7;
 }
+
 
 
 /* Contact Style */
@@ -449,6 +456,10 @@ section {
 }
 
 
+/* Footer Style */
+footer img {
+  width: 30px;
+}
 
 @media (max-width: 780px) {
   section {
@@ -456,6 +467,10 @@ section {
   }
 
   /* Home */
+  .home {
+    padding-top: 5vw;
+  }
+
   .home-container {
     flex-direction: column;
     margin-top: 3vw;
@@ -486,7 +501,8 @@ section {
   }
 
   #read-more,
-  #CV-button {
+  #CV-button,
+  #explore-more {
     padding: 3vw 5vw;
   }
 
@@ -507,29 +523,52 @@ section {
     text-align: left;
   }
 
-  .contact form {
-    max-width: 95%;
-  }
-
   /* Skills */
   .skills-section {
-    padding-bottom: 15vw;
+    margin: 0 3vw 15vw 3vw;
+    text-align: center;
   }
 
-  .portfolio-container {
-    padding-left: 2vw;
-    padding-right: 2vw;
+  .skills-container {
+    flex-direction: column;
+    margin-bottom: 5vw;
   }
 
+  .skills-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .5s ease;
+  }
+
+  .skills-box:hover img {
+    transform: scale(1);
+  }
+
+  .skills-layer p {
+    font-size: 1.35rem;
+    margin-bottom: 0.3rem;
+    width: 120%;
+  }
+
+  .skills-box .skills-layer {
+    transform: translateY(0);
+    transition: none;
+  }
+
+  .skills-layer .programming {
+    margin-bottom: -0.5vw;
+    margin-top: -0.2rem;
+  }
 
   /* Portfolio */
-  .porfolio-container {
-    margin-left: 3vw;
-    margin-right: 3vw;
-  }
-
   .mb-5 {
     padding-bottom: -4vw;
+  }
+
+  .album {
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 
   .card img {
@@ -561,4 +600,17 @@ section {
   .card:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
   }
+
+
+  /* Contact */
+  .contact form {
+    max-width: 95%;
+  }
+
+  /* Footer Style */
+  footer img {
+    width: 40px;
+    margin-right: 3vw;
+  }
+
 }
