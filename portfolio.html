@@ -61,7 +61,9 @@
             </ul>
           </li>
         </ul>
-        <button class="btn-hover color-purple" type="submit">Contact Me</button>
+        <a class="nav-link" href="#contact">
+          <button class="btn-hover color-purple">Contact Me</button>
+        </a>
       </div>
     </div>
   </nav>
@@ -80,11 +82,11 @@
         <div class="social-media">
           <a href="https://www.linkedin.com/in/adelinast/" target=”_blank”><i class='bx bxl-linkedin-square'></i></a>
           <a href="https://github.com/tabbytadi" target=”_blank”><i class='bx bxl-github'></i></a>
-          <a href="#"><i class='bx bxs-file-txt'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="./pdf/CV_Adelina_Stankova.pdf" target=”_blank”><i class='bx bxs-file-txt'></i></a>
+          <a href="https://www.instagram.com/tabbytadi/" target=”_blank”><i class='bx bxl-instagram'></i></a>
         </div>
-        <a href="./pdf/CV_Adelina_Stankova.pdf" target=”_blank” id="CV-button" class="btn-hover color-purple">Download
-          CV</a>
+        <a href="./pdf/CV_Adelina_Stankova.pdf" download id="CV-button" class="btn-hover color-purple">Download CV</a>
+
       </div>
 
       <div class="home-img">
@@ -133,222 +135,226 @@
     <br id="skills">
     <h2 class="heading">My <span>Skills</span></h2>
 
-    <div class="portfolio-container">
+    <div class="skills-container">
 
-      <div class="portfolio-box">
-        <img src="./images/skills_img/webDesign.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lortetur adipisicing elit. Omnis vitae nam animiatur provident molestias.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+      <div class="skills-box">
+        <img src="./images/skills_img/programmingSmall.jpg" alt="">
+        <div class="skills-layer">
+          <h4>Programming</h4>
+          <p class="programming">Languages I know&#58;</p>
+          <ul>
+            <li>C&#43;&#43;</li>
+            <li>C&#35;</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML&#44; CSS</li>
+          </ul>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="./images/skills_img/webDesign.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnism. </p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+      <div class="skills-box">
+        <img src="./images/skills_img/webDesignSmall.jpg" alt="">
+        <div class="skills-layer">
+          <h4> Web Design </h4>
+          <p>Proficient in crafting visually appealing and user-friendly web interfaces through creative design and
+            intuitive navigation. </p>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="./images/skills_img/webDesign.jpg" alt="">
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vitami col.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+      <bnt class="skills-box">
+        <img src="./images/skills_img/gitSmall.jpg" alt="">
+        <div class="skills-layer">
+          <h4>Git</h4>
+          <p>Most frequently used version control system. Worked on a variety of collaborative projects that utilized
+            Git workflow.</p>
+        </div>
+    </div>
+    <a href="./about.html" target=”_blank” id="explore-more" class="btn-hover color-purple">Explore More Skills...</a>
+  </section>
+
+
+
+  <!--Portfolio Section-->
+  <section class="portfolio-container album py-5 bg-body-tertiary">
+    <br id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/TinDog_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> TinDog </h4>
+            <hr>
+            <p class="card-text">This is a site inspired from a popular dating app but it&#39;s for your dog.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/TinDog?tab=readme-ov-file"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/TinDog/"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/loginPage_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Login Page </h4>
+            <hr>
+            <p class="card-text">An aesthetic and easy to change and customize login page.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/Login-Page"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/Login-Page/login"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/YouTube_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> YouTube Clone </h4>
+            <hr>
+            <p class="card-text">This is a YouTube clone that implements all the features of a home page.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/YouTube-clone?tab=readme-ov-file"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/curves_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Beautiful Curves </h4>
+            <hr>
+            <p class="card-text">An application&#44; which showcases different ways to implement beautiful curves for
+              any website.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/Beautiful-Curves-for-your-Website"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/movingCompany_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Moving Company </h4>
+            <hr>
+            <p class="card-text">A moving company website&#44; providing insight on their services with text and
+              carousel images.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/Simple-Moving-Company-Website"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/Simple-Moving-Company-Website/"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/tictactoeCplusplus_project.jpg" class="bd-placeholder-img card-img-top"
+            width="100%" height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Tic Tac Toe </h4>
+            <hr>
+            <p class="card-text">Tis is a Tic Tac Toe simulation made in C&#43;&#43; which allows users to play a
+              fully developed and immersive game.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+              </div>
+              <small class="text-body-secondary">C&#43;&#43;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/mondrian_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Mondrian Composition &#8470;3</h4>
+            <hr>
+            <p class="card-text">This is a simple website which recreates a famous Mondrian Painting with code.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/Mondrian-Painting"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+                <a href="https://tabbytadi.github.io/Mondrian-Painting/"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Live</a>
+              </div>
+              <small class="text-body-secondary">HTML, CSS</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card">
+          <img src="./images/project_img/hangmanPython_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
+            height="225" alt="Your Image">
+          <div class="card-body">
+            <h4> Hangman </h4>
+            <hr>
+            <p class="card-text">A cross-platform GUI application of a hangman game made with wxPython. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
+                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
+                  target=”_blank”>Source</a>
+              </div>
+              <small class="text-body-secondary">Python</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-
-  <!--Portfolio Section-->
-  <div class="album py-5 bg-body-tertiary">
-    <br id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-
-    <div class="porfolio-container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/TinDog_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-              height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> TinDog </h4>
-              <hr>
-              <p class="card-text">This is a site inspired from a popular dating app but it&#39;s for your dog.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/TinDog?tab=readme-ov-file"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/TinDog/"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/loginPage_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-              height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Login Page </h4>
-              <hr>
-              <p class="card-text">An aesthetic and easy to change and customize login page.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/Login-Page"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/Login-Page/login"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/YouTube_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-              height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> YouTube Clone </h4>
-              <hr>
-              <p class="card-text">This is a YouTube clone that implements all the features of a home page.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/YouTube-clone?tab=readme-ov-file"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/curves_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-              height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Beautiful Curves </h4>
-              <hr>
-              <p class="card-text">An application&#44; which showcases different ways to implement beautiful curves for
-                any
-                website.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/Beautiful-Curves-for-your-Website"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/movingCompany_project.jpg" class="bd-placeholder-img card-img-top"
-              width="100%" height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Moving Company </h4>
-              <hr>
-              <p class="card-text">A moving company website&#44; providing insight on their services with text and
-                carousel images.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/Simple-Moving-Company-Website"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/Simple-Moving-Company-Website/"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/tictactoeCplusplus_project.jpg" class="bd-placeholder-img card-img-top"
-              width="100%" height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Tic Tac Toe </h4>
-              <hr>
-              <p class="card-text">Tis is a Tic Tac Toe simulation made in C&#43;&#43; which allows users to play a
-                fully developed and immersive game.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                </div>
-                <small class="text-body-secondary">C&#43;&#43;</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/mondrian_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-              height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Mondrian Composition &#8470;3</h4>
-              <hr>
-              <p class="card-text">This is a simple website which recreates a famous Mondrian Painting with code.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/Mondrian-Painting"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                  <a href="https://tabbytadi.github.io/Mondrian-Painting/"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Live</a>
-                </div>
-                <small class="text-body-secondary">HTML, CSS</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card">
-            <img src="./images/project_img/hangmanPython_project.jpg" class="bd-placeholder-img card-img-top"
-              width="100%" height="225" alt="Your Image">
-            <div class="card-body">
-              <h4> Hangman </h4>
-              <hr>
-              <p class="card-text">A cross-platform GUI application of a hangman game made with wxPython. </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
-                    class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                    target=”_blank”>Source</a>
-                </div>
-                <small class="text-body-secondary">Python</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!--Contact Page -->
@@ -378,25 +384,14 @@
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Portfolio, Adelina Stankova</span>
+        <span class="mb-3 mb-md-0 text-body-secondary"> © 2024 Portfolio, Adelina Stankova</span>
       </div>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use>
-            </svg></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use>
-            </svg></a></li>
-      </ul>
+      <div>
+        <a class="text-body-secondary" href="#"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOZJREFUSEvtlMEJAjEQRd/WoaBoGSpYhCV48WwlXrx5tQ8Ru1BQULSL1YEEQsgmM2AuYk67ZPPe5E+yDZVHU5nPbwtaY3zJNHIRVRcYN5D+3NrkgcPctHaLoA8cHXgG3DUSrcDDhw56BVQSjSCG+8JVkpJA4AdgBAgw3IE8X4Ap8OqKKycIK5emToLcZe4ESNPPLq6kpEuQgj8AfzdkXU8j6RKsgK2rbg4IXEYokHeRSITjz+6WwC6OKhfRGtgDz2BRLPCSBbBJ9aHU5HhNSpC9Dn9B8W9hjagItJwiM+wbp8gsrR7RG5FDKxl/74odAAAAAElFTkSuQmCC" />
+        </a>
+      </div>
     </footer>
   </div>
 
