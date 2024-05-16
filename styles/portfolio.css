@@ -480,7 +480,8 @@ footer img {
   }
 
   .home-content {
-    padding-left: 2vw;
+    padding-left: 4vw;
+    padding-right: 3vw;
   }
 
   .home-content h1 {
@@ -526,7 +527,6 @@ footer img {
     text-align: center;
     padding-bottom: 10vw;
     margin-bottom: 15vw;
-    margin-left: -2vw;
   }
 
   .about-container img {
@@ -535,7 +535,7 @@ footer img {
   }
 
   .about-container .text {
-    padding-right: 2vw;
+    padding-right: 4vw;
     margin-left: 2vw;
   }
 
