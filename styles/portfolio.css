@@ -479,6 +479,15 @@ footer img {
     text-align: center;
   }
 
+  .home-content {
+    padding-left: 2vw;
+  }
+
+  .home-content h1 {
+    font-size: 2.6rem;
+    padding-left: 0;
+  }
+
   .home-content h3 {
     font-size: 2.5rem;
   }
@@ -523,6 +532,11 @@ footer img {
   .about-container img {
     text-align: center;
     width: 60vw;
+  }
+
+  .about-container .text {
+    padding-right: 2vw;
+    margin-left: 2vw;
   }
 
   p {
