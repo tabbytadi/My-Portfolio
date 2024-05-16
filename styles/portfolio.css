@@ -475,7 +475,12 @@ footer img {
     flex-direction: column;
     margin-top: 3vw;
     margin-bottom: 10vw;
+    margin-left: -2vw;
     text-align: center;
+  }
+
+  .home-content h3 {
+    font-size: 2.5rem;
   }
 
   .home-content p {
@@ -512,10 +517,11 @@ footer img {
     text-align: center;
     padding-bottom: 10vw;
     margin-bottom: 15vw;
+    margin-left: -2vw;
   }
 
   .about-container img {
-    margin: 5vw 0vw 10vw 2.2vw;
+    text-align: center;
     width: 60vw;
   }
 
@@ -532,6 +538,7 @@ footer img {
   .skills-container {
     flex-direction: column;
     margin-bottom: 5vw;
+    margin-left: -3vw;
   }
 
   .skills-box img {
