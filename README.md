@@ -1,5 +1,5 @@
-# First-Online-Portfolio
-### Created my first Online Portfolio using HTML, CSS and Bootstrap
-This is the first version: [Adelina's Online Portfolio](https://tabbytadi.github.io/firstOnlinePortfolio/portfolio.html).
+# Portfolio
+### This is my first Professional Online Portfolio, created with HTML, CSS and Bootstrap.
+You can acces the site here: [Adelina's Online Portfolio](https://tabbytadi.github.io/firstOnlinePortfolio/portfolio.html).
 <br>
->*The site is currently going through changes*
+>*The page is currently going through changes*
