@@ -1,0 +1,322 @@
+* {
+  font-family: Geologica, Arial;
+  margin-top: 0;
+}
+
+body {
+  font-family: Geologica, Arial;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.gray {
+  background-color: rgb(248, 249, 250);
+}
+
+section {
+  padding: 7vw 7vw 3vw 7vw;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+span {
+  color: #764ba2;
+}
+
+h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 26.4px;
+  font-size: 1.1rem;
+}
+
+
+/* Title Style */
+.title {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.title h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #54406e;
+}
+
+.hr-dots {
+  height: 20px;
+  border: none;
+  position: relative;
+}
+
+.hr-dots::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  background-image: radial-gradient(#54406e 0%, #562f89 50%, transparent 50%, transparent 100%);
+  background-size: 20px 20px;
+}
+
+
+
+/* Skills Style */
+.skills h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.skills ul {
+  user-select: none;
+  padding: 0;
+}
+
+.skills li {
+  user-select: none;
+  display: inline-block;
+  padding: .5vw 1vw 0 1vw;
+  margin-right: 1vw;
+}
+
+/* Button Styling */
+.btn-hover {
+  padding: 0px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin: 5px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-purple {
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+
+
+/* Gradient Background Style */
+.gradient-background {
+  background: linear-gradient(300deg, #a173cf, #3fcfffcc, #b982f0);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Experience Style */
+.experience {
+  padding-right: 3vw;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+}
+
+.experience p {
+  margin-top: 2rem;
+}
+
+.experience .text {
+  margin-left: 2vw;
+  padding-right: 5vw;
+}
+
+.experience img {
+  height: 30vw;
+  padding-left: 5vw;
+  margin-right: 3vw;
+}
+
+
+/* Motivation Style */
+.motivation-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.motivation h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-top: .2rem;
+  margin-bottom: 2rem;
+}
+
+
+/* Hobby Style */
+.hobby-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hobby-container img {
+  height: 28vw;
+  margin-left: -5vw;
+}
+
+.hobby h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.banner {
+  width: 100%;
+  margin-top: -3vw;
+  opacity: 0.87;
+}
+
+
+/* Footer Style */
+.footer {
+  padding: 0 5vw 2vw 5vw;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container .right {
+  margin-top: -1.8vw;
+}
+
+.footer-text {
+  text-align: left;
+  color: rgba(33, 37, 41, 0.75);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media(min-width:781px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  * {
+    text-align: center;
+  }
+
+  /* Skills Style */
+  p,
+  ul {
+    text-align: left;
+  }
+
+  .skills li {
+    padding: 1.4vw 2vw 0 2vw;
+  }
+
+  /* Experience Style */
+  .experience-container {
+    flex-direction: column;
+    margin-right: 3vw;
+  }
+
+  .experience h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience img {
+    height: 50vw
+  }
+
+  /*Hobby Style */
+  .hobby-container {
+    flex-direction: column;
+  }
+
+  .hobby img {
+    height: 50vw;
+    margin-top: -6vw;
+    margin-bottom: 6vw;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  /*Motivation Style */
+  .motivation-container {
+    flex-direction: column;
+  }
+
+  .banner {
+    transform: scale(1.1);
+    opacity: 0.91;
+  }
+
+  .footer-text {
+    color: black;
+  }
+
+}
