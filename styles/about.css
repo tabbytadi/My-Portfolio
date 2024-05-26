@@ -21,8 +21,14 @@ img {
   -webkit-user-drag: none;
 }
 
-span {
+span,
+.globalOne {
   color: #764ba2;
+  transition: color .125s;
+}
+
+.globalOne:hover {
+  color: #613989;
 }
 
 h1 {
