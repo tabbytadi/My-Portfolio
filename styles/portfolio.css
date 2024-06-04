@@ -59,7 +59,6 @@ section {
 /* Home Style */
 .home {
   padding-top: 5vw;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -498,7 +497,12 @@ footer img {
   }
 
   .home-content .social-media {
-    margin-bottom: 0;
+    margin: 0;
+  }
+
+  .social-media a {
+    min-width: 64px;
+    margin: 3rem .75rem 3rem .75rem;
   }
 
   .home-container img {
