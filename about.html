@@ -4,409 +4,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/about.css">
 
-  <link rel="stylesheet" href="styles/portfolio.css">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
 
-
-
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <title> Adelina&#39;s Online Resume</title>
-</head>
-
-
-<body>
-  <!--Header section-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="d-flex align-items-center">
-        <a class="navbar-brand" href="#">
-          <img src="./images/mePfp2.jpg" id="profilePic" alt="my profile picture">
-          Adelina's Online Resume
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link activee" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#portfolio">My Latest Projects</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" target=”_blank” href="https://tabbytadi.github.io/TinDog/">TinDog</a></li>
-              <li><a class="dropdown-item" target=”_blank” href="https://tabbytadi.github.io/Login-Page/login">Login
-                  Page</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://tabbytadi.github.io/YouTube-clone/youtube.html">YouTube Clone</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html">Curves</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://tabbytadi.github.io/Simple-Moving-Company-Website/">Moving Company</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp">Tic Tac Toe</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://tabbytadi.github.io/Mondrian-Painting/">Mondrian Painting</a></li>
-              <li><a class="dropdown-item" target=”_blank”
-                  href="https://github.com/tabbytadi/Hangman-Python/tree/main">Hangman game</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a class="nav-link" href="#contact">
-          <button class="btn-hover color-purple">Contact Me</button>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!--Home Section-->
-  <section class="home" id="home">
-    <div class="home-container">
-      <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Adelina Stankova</h1>
-        <h3>And I am a <span>Frontend Developer!</span></h3>
-        <p>Transforming ideas into captivating digital experiences! With a passion for innovation and expertise in
-          frontend development, I'm your go-to partner for crafting immersive and user-friendly web solutions that
-          resonate with your audience. </p>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/adelinast/" target=”_blank”><i class='bx bxl-linkedin-square'></i></a>
-          <a href="https://github.com/tabbytadi" target=”_blank”><i class='bx bxl-github'></i></a>
-          <a href="./pdf/CV_AdelinaStankova.pdf" target=”_blank”><i class='bx bxs-file-txt'></i></a>
-          <a href="https://www.instagram.com/tabbytadi/" target=”_blank”><i class='bx bxl-instagram'></i></a>
-        </div>
-        <a href="./pdf/CV_AdelinaStankova.pdf" download id="CV-button" class="btn-hover color-purple">Download CV</a>
-
-      </div>
-
-      <div class="home-img">
-        <img class="me" src="images/me.jpg" alt="A picture of Adelina">
-      </div>
-    </div>
-  </section>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./style.css">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <title>About Me</title>
+</head>
 
-
-  <!--About Section-->
-  <section class="about" id="about-me">
-    <div class="about-container">
-      <div class="home-img">
-        <img class="me" src=" images/me.jpg" alt="A picture of Adelina">
-      </div>
-      <div class="text">
-        <h2>About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>Hello, I'm Adelina, a dedicated Computer Science student with a never-ending curiosity for the tech world. I
-          thrive on the dynamic nature of web development, constantly seeking opportunities to expand my skills and push
-          boundaries. From designing captivating user interfaces to delving into complex coding challenges, I am
-          passionate about creating digital experiences that leave a lasting impression. With a commitment to lifelong
-          learning and a drive to innovate, I am poised to make meaningful contributions in the ever-evolving world of
-          frontend development.</p>
-        <a href="./about.html" target=”_blank” id="read-more" class="btn-hover color-purple">Read More</a>
-      </div>
-    </div>
+<body>
+  <section class="title gradient-background" id="title">
+    <h1 class="about-me">About <span>Me</span></h1>
+    <hr class="hr-dots desktop">
   </section>
+
 
 
   <!-- Skills Section -->
-  <section class="skills-section">
-    <br id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-
-    <div class="skills-container">
-
-      <div class="skills-box">
-        <img src="./images/skills_img/programmingSmall.jpg" alt="">
-        <div class="skills-layer">
-          <h4>Programming</h4>
-          <p class="programming">Languages I know&#58;</p>
-          <ul>
-            <li>C&#43;&#43;</li>
-            <li>C&#35;</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML&#44; CSS</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="skills-box">
-        <img src="./images/skills_img/webDesignSmall.jpg" alt="">
-        <div class="skills-layer">
-          <h4> Web Design </h4>
-          <p>Proficient in crafting visually appealing and user-friendly web interfaces through creative design and
-            intuitive navigation. </p>
-        </div>
-      </div>
-
-      <bnt class="skills-box">
-        <img src="./images/skills_img/gitSmall.jpg" alt="">
-        <div class="skills-layer">
-          <h4>Git</h4>
-          <p>Most frequently used version control system. Worked on a variety of collaborative projects that utilized
-            Git workflow.</p>
-        </div>
-    </div>
-    <a href="./about.html" target=”_blank” id="explore-more" class="btn-hover color-purple">Explore More Skills...</a>
+  <section class="skills" id="skills">
+    <h2>&#60;&#47;&#62; My Technical <span>Skills </span></h2>
+    <ul>
+      <li class="btn-hover color-purple">HTML</li>
+      <li class="btn-hover color-purple">CSS</li>
+      <li class="btn-hover color-purple">JavaScript</li>
+      <li class="btn-hover color-purple">C&#43;&#43;</li>
+      <li class="btn-hover color-purple">C&#35;</li>
+      <li class="btn-hover color-purple">Python</li>
+      <li class="btn-hover color-purple">Node.js</li>
+      <li class="btn-hover color-purple">React.js</li>
+      <li class="btn-hover color-purple">Express.js</li>
+      <li class="btn-hover color-purple">APIs</li>
+      <li class="btn-hover color-purple">EJS</li>
+      <li class="btn-hover color-purple">DApps</li>
+      <li class="btn-hover color-purple">Figma</li>
+      <li class="btn-hover color-purple">PHP</li>
+      <li class="btn-hover color-purple">MySQL</li>
+      <li class="btn-hover color-purple">Git</li>
+      <li class="btn-hover color-purple">Wordpress</li>
+    </ul>
   </section>
 
 
-
-  <!--Portfolio Section-->
-  <section class="portfolio-container album py-5 bg-body-tertiary">
-    <br id="portfolio">
-    <h2 class="heading">Latest <span>Projects</span></h2>
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/TinDog_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> TinDog </h4>
-            <hr>
-            <p class="card-text">This is a site inspired from a popular dating app but it&#39;s for your dog.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/TinDog?tab=readme-ov-file"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/TinDog/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
+  <!-- Experience Section -->
+  <section class="experience gray" id="experience">
+    <div class="experience-container">
+      <div class="experience-text">
+        <h2>My Experience</h2>
+        <h3><span>C&#35; and MVVM Project Lead and Designer in <a class="globalOne"
+              href="https://globalone.bg/en">GlobalOne
+              Ltd</a></span></h3>
+        <p>Spearheaded the completion and finalization of legitimate marine graduate document design&#44; ensuring
+          adherence
+          to timelines and quality standards&#44; which received 100&#37; positive feedback&#44; achieving a 95&#37;
+          customer
+          satisfaction score during my internship. I received positive feedback for my precision&#44; analytical
+          thinking&#44; and attention to detail by my supervisor.</p>
       </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/loginPage_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Login Page </h4>
-            <hr>
-            <p class="card-text">An aesthetic and easy to change and customize login page.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Login-Page"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Login-Page/login"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/YouTube_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> YouTube Clone </h4>
-            <hr>
-            <p class="card-text">This is a YouTube clone that implements all the features of a home page.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/YouTube-clone?tab=readme-ov-file"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/curves_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Beautiful Curves </h4>
-            <hr>
-            <p class="card-text">An application&#44; which showcases different ways to implement beautiful curves for
-              any website.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Beautiful-Curves-for-your-Website"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/movingCompany_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Moving Company </h4>
-            <hr>
-            <p class="card-text">A moving company website&#44; providing insight on their services with text and
-              carousel images.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Simple-Moving-Company-Website"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Simple-Moving-Company-Website/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/tictactoeCplusplus_project.jpg" class="bd-placeholder-img card-img-top"
-            width="100%" height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Tic Tac Toe </h4>
-            <hr>
-            <p class="card-text">Tis is a Tic Tac Toe simulation made in C&#43;&#43; which allows users to play a
-              fully developed and immersive game.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-              </div>
-              <small class="text-body-secondary">C&#43;&#43;</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/mondrian_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Mondrian Composition &#8470;3</h4>
-            <hr>
-            <p class="card-text">This is a simple website which recreates a famous Mondrian Painting with code.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Mondrian-Painting"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Mondrian-Painting/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML, CSS</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-5">
-        <div class="card">
-          <img src="./images/project_img/hangmanPython_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Hangman </h4>
-            <hr>
-            <p class="card-text">A cross-platform GUI application of a hangman game made with wxPython. </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-              </div>
-              <small class="text-body-secondary">Python</small>
-            </div>
-          </div>
-        </div>
+      <div class="experience-img">
+        <img src="./images/about/experience.png" alt="a person coding" />
       </div>
     </div>
   </section>
 
 
-  <!--Contact Page -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <div class="input-box">
-        <input type="hidden" name="access_key" value="099d5400-e948-4bc8-8391-dfa421d616b4">
-        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-        <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
+  <!-- Painting Hobby Section -->
+  <section class="hobby" id="hobby">
+    <div class="hobby-container">
+      <div class="hobby-img">
+        <img class="desktop" src="./images/about/painter.jpg" alt="painter">
       </div>
-
-      <div class="input-box">
-        <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Mobile number">
-        <input type="text" class="form-control" name="subject" id="subject" placeholder="Email subject">
+      <div class="hobby-text">
+        <h2>My <span>Painting</span> Hobby</h2>
+        <img class="mobile" src="./images/about/painter.jpg" alt="painter">
+        <p>Additionally&#44; I am greatly passionate about leveraging my design and artistic talents to create
+          captivating
+          acrylic paintings. Currently&#44; I am channeling this passion into the development of adipainter.com&#44; a
+          dynamic
+          website where I showcase my artwork and integrate interactive design elements. By infusing my artistic
+          expertise into web development&#44; I aim to create an immersive online experience that resonates with
+          visitors&#44;
+          which is a perfect way to implement my passion for technology and creativity.</p>
       </div>
-
-      <textarea class="form-control" name="message" id="message" cols="30" rows="6"
-        placeholder="Write your message"></textarea>
-      <input type="submit" id="send-message" class="btn-hover color-purple" value="Send Message">
-    </form>
+    </div>
   </section>
 
 
+  <!-- My Motivation -->
+  <section class="motivation gray" id="motivation">
+    <div class="motivation-container">
+      <h2>What Motivates <span>Me</span></h2>
+      <p>I get excited about opportunities where I can leverage my passion for front&#45;end development and UI&#47;UX
+        design to
+        create intuitive&#44; user&#45;friendly&#44; and visually appealing digital products. With firsthand experience
+        as a C&#35;
+        Project
+        Designer&#44; resulting in a 30&#37; improvement in user engagement and currently proactively acquiring new
+        skills like
+        Web
+        Design&#44; CSS3&#44; HTML5&#44; JavaScript&#44; and Figma&#44; I bring adaptability and versatility to any
+        project. My deep passion
+        for
+        exploring emerging trends in modern technologies, coupled with my educational background in Informatics and
+        Computer
+        Science shows a self&#45;driven and open to learning person with strong foundation in algorithms and data
+        structures. I
+        thrive on the challenge of bringing innovative ideas to life and delivering impactful solutions that delight
+        users and I am
+        eager to contribute&#44; collaborate&#44; and grow within dynamic teams.</p>
+    </div>
+  </section>
+  <img class="banner" src="./images/about/banner.png" alt="programming">
 
   <!--Footer-->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-body-secondary"> &#169; 2024 Portfolio, Adelina Stankova</span>
-      </div>
-
+  <section class="footer">
+    <hr>
+    <footer class="footer-container" style="display: flex;">
       <div>
-        <a class="text-body-secondary" href="#"><img
+        <p class="footer-text">I love connecting with new people&#44; give me a shout at
+          adelina.st.live&#64;gmail.com !</p>
+      </div>
+      <div class="right">
+        <a class="desktop" href="#"><img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOZJREFUSEvtlMEJAjEQRd/WoaBoGSpYhCV48WwlXrx5tQ8Ru1BQULSL1YEEQsgmM2AuYk67ZPPe5E+yDZVHU5nPbwtaY3zJNHIRVRcYN5D+3NrkgcPctHaLoA8cHXgG3DUSrcDDhw56BVQSjSCG+8JVkpJA4AdgBAgw3IE8X4Ap8OqKKycIK5emToLcZe4ESNPPLq6kpEuQgj8AfzdkXU8j6RKsgK2rbg4IXEYokHeRSITjz+6WwC6OKhfRGtgDz2BRLPCSBbBJ9aHU5HhNSpC9Dn9B8W9hjagItJwiM+wbp8gsrR7RG5FDKxl/74odAAAAAElFTkSuQmCC" />
         </a>
       </div>
     </footer>
-  </div>
-
-
+  </section>
 </body>
 
 </html>
