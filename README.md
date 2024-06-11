@@ -41,8 +41,7 @@ Alternatively, you can use a live server extension if you are using an IDE like 
 
 <br>
 
-By following these steps, you will be able to view and interact with the project locally on your machine.
-
 > [!TIP]
 > This section provides clear instructions for users to set up and run this project on their local machines.
+> By following these steps, you will be able to view and interact with the project locally on your machine.
 
