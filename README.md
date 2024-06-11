@@ -33,15 +33,11 @@ To run this project locally:
 2. Navigate to the project directory:
    ```bash
    cd My-Portfolio
-3. Open the index.html file in your web browser:
-  ```bash
-    open index.html
-
-
-
-
-# Portfolio
-### This is my first Professional Online Portfolio, created with HTML, CSS and Bootstrap.
-You can acces the site here: [Adelina's Online Portfolio](https://tabbytadi.github.io/My-Portfolio/portfolio.html).
+2. Open the index.html file in your web browser:
+   ```bash
+   open index.html
+Alternatively, you can use a live server extension if you are using an IDE like Visual Studio Code.
 <br>
->*The page will soon implement JavaScript*
+By following these steps, you will be able to view and interact with the project locally on your machine.
+> [!TIP]
+> Helpful advice for doing things better or more easily.
