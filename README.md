@@ -1,5 +1,8 @@
 # My Personal Portfolio
 
+
+
+
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences as a frontend developer. It includes an introduction about me, highlights of my proficiency in various programming languages and Web Design, and details of some of my completed projects.
 
 ## Website Overview
