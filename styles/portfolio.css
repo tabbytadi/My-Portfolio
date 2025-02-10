@@ -535,6 +535,10 @@ footer img {
   width: 30px;
 }
 
+footer #year {
+  color: rgba(33, 37, 41, 0.75);
+}
+
 
 /* SCROLL ANIMATION */
 .scroll-animate {
