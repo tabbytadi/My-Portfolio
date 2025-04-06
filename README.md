@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## Website Overview
 
-You can view the live website [here](https://tabbytadi.github.io/My-Portfolio/portfolio.html).
+You can view the live website [here](https://tabbytadi.github.io/My-Portfolio/index.html).
 
 ## Features
 
