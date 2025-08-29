@@ -124,7 +124,7 @@
             <div id="zoomOnHover">
               <a href="./pdf/CV_AdelinaStankova.pdf" target="_blank"><i class='bx bxs-file-txt'></i></a>
             </div>
-<!--             <div id="zoomOnHover">
+            <!--             <div id="zoomOnHover">
               <a href="https://www.instagram.com/tabbytadi/" target="_blank"><i class='bx bxl-instagram'></i></a>
             </div> -->
 
@@ -178,16 +178,20 @@
 
 
   <!-- Skills Section -->
-  <section class="skills-section" id="skills">
+  <section class="skills-cards-section" id="skills" style="timeline-scope: --trigger-1, --trigger-2, --trigger-3;">
+    <div class="skills-card-scroll-triggers">
+      <div style="view-timeline: --trigger-1;"></div>
+      <div style="view-timeline: --trigger-2;"></div>
+    </div>
+
     <h2 class="heading scroll-animate-side">My <span>Skills</span></h2>
 
-    <div class="skills-container scroll-animate">
-
-      <div class=" skills-box">
-        <img src="./images/skills_img/programmingSmall.jpg" alt="">
+    <div class="skills-cards-inner">
+      <div class="skills-card skills-box">
+        <img src="./images/skills_img/programmingSmall.jpg" alt="Programming">
         <div class="skills-layer">
           <h4>Programming</h4>
-          <p class="programming">Languages I know&#58;</p>
+          <p class="skills-programming">Languages I know&#58;</p>
           <ul>
             <li>C&#43;&#43;</li>
             <li>C&#35;</li>
@@ -198,25 +202,25 @@
           </ul>
         </div>
       </div>
-
-      <div class="skills-box">
-        <img src="./images/skills_img/webDesignSmall.jpg" alt="">
+      <div class="skills-card skills-box" style="--animation-timeline: --trigger-1;">
+        <img src="./images/skills_img/webDesignSmall.jpg" alt="Web Design">
         <div class="skills-layer">
-          <h4> Web Design </h4>
+          <h4>Web Design</h4>
           <p>Proficient in crafting visually appealing and user-friendly web interfaces through creative design and
-            intuitive navigation. </p>
+            intuitive navigation.</p>
         </div>
       </div>
-
-      <bnt class="skills-box">
-        <img src="./images/skills_img/gitSmall.jpg" alt="">
+      <div class="skills-card skills-box" style="--animation-timeline: --trigger-2;">
+        <img src="./images/skills_img/gitSmall.jpg" alt="Git">
         <div class="skills-layer">
           <h4>Git</h4>
           <p>Most frequently used version control system. Worked on a variety of collaborative projects that utilized
             Git workflow.</p>
         </div>
+      </div>
     </div>
-    <div id="zoomOnHover">
+
+    <div id="skills-zoomOnHover">
       <a href="./about.html" target=”_blank”>
         <button id="explore-more" class="btn-hover color-purple scroll-scale-fade">Explore More Skills...</button>
       </a>
@@ -476,9 +480,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
