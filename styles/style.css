@@ -949,14 +949,19 @@ footer #year {
     margin-bottom: 15vw;
   }
 
-  .about-container img {
-    text-align: center;
-    width: 60vw;
-  }
-
   .about-container .text {
     padding-right: 4vw;
     margin-left: 2vw;
+  }
+
+  .image-figure--1 img {
+    width: 150%;
+    height: 175%;
+  }
+
+  .image-figure--2 img {
+    width: 175%;
+    height: 190%;
   }
 
   p {
