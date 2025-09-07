@@ -425,57 +425,6 @@ a {
   transform: scale(1);
 }
 
-/* Responsive design */
-@media (max-width: 992px) {
-  .content-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .images-container,
-  .text {
-    width: 100%;
-  }
-
-  .images-container {
-    height: 400px;
-    margin-bottom: 40px;
-  }
-
-  .image-figure--1 {
-    left: 10%;
-  }
-
-  .image-figure--2 {
-    left: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .about h2 {
-    font-size: 2.5rem;
-  }
-
-  .about h3 {
-    font-size: 1.6rem;
-  }
-
-  .image-figure {
-    width: 250px;
-    height: 350px;
-  }
-
-  .image-figure--1 {
-    left: 5%;
-  }
-
-  .image-figure--2 {
-    left: 35%;
-  }
-}
-
-
-
 
 
 /* Skills Section */
@@ -588,7 +537,7 @@ a {
 .skills-layer p {
   font-size: 1.35rem;
   margin-bottom: 0.3rem;
-  width: 150%;
+  width: 140%;
 }
 
 .skills-layer .skills-programming {
@@ -782,6 +731,10 @@ a {
 
 
 /* Footer Style */
+footer {
+  margin: 0 10vw;
+}
+
 footer img {
   width: 30px;
 }
@@ -856,6 +809,352 @@ footer #year {
 #zoomOnHover:hover {
   transition: all .3s ease-in-out;
   transform: scale(1);
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 1800px) and (max-width: 2600px) {
+
+  /* Typography */
+  p,
+  a,
+  #read-more,
+  .contact input,
+  .contact textarea,
+  .contact input::placeholder,
+  .contact textarea::placeholder,
+  .contact input:focus::placeholder,
+  .contact textarea:focus::placeholder {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2,
+  span {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  span.footer-text,
+  span.footer-text span {
+    font-size: 2rem;
+  }
+
+  section {
+    margin: 5vw;
+    padding: 0;
+  }
+
+  /* Button Styling */
+  .btn-hover {
+    padding: 0 1vw;
+    font-size: 2rem;
+    margin: 1vw;
+    height: 4vw;
+    border-radius: 50px;
+  }
+
+  /* Navbar */
+  .d-flex.align-items-center .nav-link,
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #profilePic {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  /* Home Section */
+  .home-content {
+    padding-right: 0;
+  }
+
+  .home-img img {
+    width: 33vw;
+    padding-right: 5vw;
+  }
+
+  .home-content h3 {
+    margin: 1.5rem 0;
+  }
+
+  .home-content p {
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  /* About Section */
+  .about-container {
+    margin: 0;
+    display: flex;
+    min-width: 1500px;
+    justify-content: center;
+  }
+
+  .about .text {
+    width: 45%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .about .text p {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Skills Section */
+  .skills-layer p {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 0 15vw;
+  }
+
+  .social-media a {
+    font-size: 2.5rem;
+    margin: 0 1rem;
+  }
+
+
+  .image-figure {
+    width: 350px;
+    height: 450px;
+  }
+
+  .image-figure--1 {
+    left: 15%;
+  }
+
+  .image-figure--2 {
+    left: 40%;
+  }
+}
+
+
+
+@media (min-width: 2300px) and (max-width: 2600px) {
+
+  /* About Section */
+  .about-container {
+    margin: 0;
+    min-width: 2000px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+@media (min-width: 5000px) {
+  .social-media {
+    margin-top: 2vw;
+  }
+
+  .about-container {
+    margin: 0;
+    min-width: 4000px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+
+
+
+
+@media (min-width: 2600px) {
+  .container-fluid {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .about-container {
+    max-width: 1800px;
+    margin: 0 auto !important;
+  }
+
+  p,
+  a,
+  li,
+  #read-more {
+    font-size: 4rem !important;
+  }
+
+  h1 {
+    font-size: 6.5rem !important;
+  }
+
+  h2,
+  span {
+    font-size: 6rem !important;
+  }
+
+  h3 {
+    font-size: 5.5rem !important;
+  }
+
+  h4 {
+    font-size: 5rem !important;
+  }
+
+  span.footer-text,
+  span.footer-text span {
+    font-size: 4rem !important;
+  }
+
+  /* Button Styling */
+  .btn-hover {
+    padding: 0 2vw;
+    font-size: 1vw !important;
+    margin: 1vw;
+    height: 4vw;
+    border-radius: 50px;
+  }
+
+  /* Navbar */
+  .container-fluid {
+    max-width: 2500px;
+    margin: 0 auto;
+  }
+
+  .d-flex.align-items-center .nav-link {
+    font-size: 4rem !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 4rem !important;
+    padding: 0.5rem 1rem;
+  }
+
+  #profilePic {
+    width: 8rem !important;
+    height: 8rem !important;
+  }
+
+  /* Home Section */
+  .social-media a i,
+  .social-media a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem 5rem;
+  }
+
+
+  /* About Section */
+  .about-container {
+    min-width: 3000px;
+  }
+
+  /* Skills Section */
+  .skills-layer p {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Contact Style*/
+  .contact input,
+  .contact textarea,
+  .contact input::placeholder,
+  .contact textarea::placeholder,
+  .contact input:focus::placeholder,
+  .contact textarea:focus::placeholder {
+    font-size: 3.5rem;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .images-container,
+  .text {
+    width: 100%;
+  }
+
+  .images-container {
+    height: 400px;
+    margin-bottom: 40px;
+  }
+
+  .image-figure--1 {
+    left: 10%;
+  }
+
+  .image-figure--2 {
+    left: 40%;
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .about h3 {
+    font-size: 1.6rem;
+  }
+
+  .image-figure {
+    width: 250px;
+    height: 350px;
+  }
+
+  .image-figure--1 {
+    left: 5%;
+  }
+
+  .image-figure--2 {
+    left: 35%;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1020,9 +1319,12 @@ footer #year {
     font-size: 1rem;
     width: 140%;
   }
+
+  /* Footer Style */
+  footer {
+    margin: 0;
+  }
 }
-
-
 
 
 
