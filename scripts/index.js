@@ -5,17 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ".scroll-animate, .scroll-animate-side, .scroll-fade, .scroll-scale-fade"
   );
 
-
-
-
-
-
-
-
-
-
-
-
+  const themeToggle = document.getElementById('theme-toggle');
 
 
 
@@ -113,6 +103,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  // Light Dark Theme toggle functionality
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateToggleText(savedTheme);
+  }
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateToggleText(newTheme);
+  }
+
+  function updateToggleText(theme) {
+    themeToggle.textContent = theme === 'light' ? '' : '';
+  }
+
+  themeToggle.addEventListener('click', toggleTheme);
+  initTheme();
+
 
 
   gsap.to(".image-figure--1 img", {
@@ -162,4 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
     rotate: 8,
     duration: 1
   });
+
+
+
 });
