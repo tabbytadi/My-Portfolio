@@ -246,200 +246,273 @@
 
 
 
-  <!--Portfolio Section-->
-  <section class="portfolio-container project-section album py-6 bg-body-tertiary" id="portfolio">
-    <h2 class="heading scroll-animate-side">Latest <span>Projects</span></h2>
+  <!-- PROJECT SECTION -->
+  <section class="project-section">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-section="all">All Projects</button>
+      <button class="filter-btn" data-section="web">Web Development</button>
+      <button class="filter-btn" data-section="databases">Databases</button>
+      <button class="filter-btn" data-section="programming">Programming</button>
+      <button class="filter-btn" data-section="multithreading">Multithreading</button>
+      <button class="filter-btn" data-section="ai">AI</button>
+      <button class="filter-btn" data-section="testing">Testing</button>
+      <button class="filter-btn" data-section="design">UI/UX Design</button>
+    </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/TinDog_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> TinDog </h4>
-            <hr>
-            <p class="card-text">This is a site inspired from a popular dating app but it&#39;s for your dog.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/TinDog?tab=readme-ov-file"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/TinDog/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+    <div class="projects-container">
+      <h2 class="section-title" id="current-section">All Projects</h2>
+
+      <!-- WEB DEVELOPMENT -->
+      <div class="project" data-section="web databases" data-priority="all:1,web:2,databases:2">
+        <div class="image-container">
+          <img src="./images/project_img/medical_records.jpg" alt="Medical Records" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Medical Records Platform</h2>
+          <p class="project-tech">Java <span>|</span> Spring Boot <span>|</span> REST API <span>|</span> MySQL
+            <span>|</span> Frontend
+          </p>
+          <p class="project-desc">A web-based system for managing patient medical records. The platform supports patient
+            and doctor registration, tracking diagnoses, treatments, and sick leave, while ensuring that patients can
+            view
+            their history and doctors can manage records of their consultations.</p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/medical-records"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/loginPage_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Login Page </h4>
-            <hr>
-            <p class="card-text">An aesthetic and easy to change and customize login page.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Login-Page"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Login-Page/login"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+
+      <div class="project" data-section="web ai" data-priority="all:2,web:1">
+        <div class="image-container">
+          <img src="./images/project_img/learn-n-earn.jpg" alt="Learn and Earn" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Learn and Earn</h2>
+          <p class="project-tech">Python <span>|</span> AI <span>|</span> Bootstrap <span>|</span> Agile Collaboration
+          </p>
+          <p class="project-desc"> A hackathon project that transforms study time into real-world discounts. The
+            platform
+            introduces EduCent, a reward currency where 1 EduCent equals 1% discount at partner businesses (e.g. Costa,
+            Greenwich). Features include AI-generated tests for better knowledge retention and a Focus Timer to boost
+            productivity. Built in a team of five using agile methodology, where I contributed as Lead Developer. </p>
+          <div class="btn-group">
+            <a href="https://learn-n-earn.vercel.app" class="btn btn-sm btn-outline-light btn-hover color-purple"
+              style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/YouTube_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> YouTube Clone </h4>
-            <hr>
-            <p class="card-text">This is a YouTube clone that implements all the features of a home page.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/YouTube-clone?tab=readme-ov-file"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+
+      <div class="project" data-section="web" data-priority="all:3,web:3">
+        <div class="image-container">
+          <img src="./images/project_img/angular_calculator.jpg" alt="Angular Calculator" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Angular Calculator</h2>
+          <p class="project-tech">Angular <span>|</span> TypeScript <span>|</span> SCSS</p>
+          <p class="project-desc">A lightweight calculator app implementing core operations (add, subtract, multiply,
+            divide, clear, negate, percent). Built entirely from scratch with custom SCSS and no external CSS libraries.
+            It demonstrates key Angular concepts including Components, Services and Routing.</p>
+          <div class="btn-group">
+            <a href="https://calculator-angular-roan.vercel.app"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/maze.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225"
-            alt="Your Image">
-          <div class="card-body">
-            <h4> Maze Solving Python </h4>
-            <hr>
-            <p class="card-text">A program visualizing and solving a maze using DFS and BFS.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/PythonMaze"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-              </div>
-              <small class="text-body-secondary">Python</small>
-            </div>
+
+      <div class="project" data-section="web" data-priority="all:4,web:4">
+        <div class="image-container">
+          <img src="./images/project_img/youtube_clone.jpg" alt="YouTube Clone" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">YouTube Clone</h2>
+          <p class="project-tech">HTML <span>|</span> CSS <span>|</span> Responsive Layouts</p>
+          <p class="project-desc">My first web development project, where I recreated YouTube&#39;s interface. Through
+            this project, I learned the basics of HTML structure, CSS styling, grids, and layouts, while also practicing
+            how to organize a full webpage and use video embedding features.</p>
+          <div class="btn-group">
+            <a href="https://tabbytadi.github.io/YouTube-clone/youtube.html"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/curves_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Beautiful Curves </h4>
-            <hr>
-            <p class="card-text">An application&#44; which showcases different ways to implement beautiful curves for
-              any website.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Beautiful-Curves-for-your-Website"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Beautiful-Curves-for-your-Website/curves.html"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+
+      <!-- DATABASES -->
+      <div class="project" data-section="databases testing" data-priority="all:5,databases:1">
+        <div class="image-container">
+          <img src="./images/project_img/house_administrator.jpg" alt="House Administrator" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">House Administrator</h2>
+          <p class="project-tech">Java <span>|</span> CRUD <span>|</span> MySQL <span>|</span> REST API <span>|</span>
+            Postman <span>|</span> Testing</p>
+          <p class="project-desc">A web-based management system for residential buildings. It automates monthly fee
+            calculations based on apartment size, residents, pets, and elevator use. Features include managing
+            companies,
+            buildings, staff, and residents, assigning buildings to employees, recording and tracking payments, and
+            generating reports for finances and occupancy.
+          </p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/Electronic-House-Administrator"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/movingCompany_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Moving Company </h4>
-            <hr>
-            <p class="card-text">A moving company website&#44; providing insight on their services with text and
-              carousel images.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Simple-Moving-Company-Website"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Simple-Moving-Company-Website/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+
+      <!-- PROGRAMMING -->
+      <div class="project" data-section="programming testing" data-priority="all:6,programming:1">
+        <div class="image-container">
+          <img src="./images/project_img/printing_house.jpg" alt="Printing House" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Printing House</h2>
+          <p class="project-tech">Java <span>|</span> OOP <span>|</span> File I/O <span>|</span> Exception Handling
+            <span>|</span> Testing
+          </p>
+          <p class="project-desc">A management system for a printing house, tracking paper types, sizes, printing
+            machines
+            and employees. Automatically calculates printing costs, salaries, and revenue. Supports exception handling,
+            data serialization, and file I/O for editions. Includes unit tests for reliability.</p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/Printing-House-Project"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/tictactoeCplusplus_project.jpg" class="bd-placeholder-img card-img-top"
-            width="100%" height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Tic Tac Toe </h4>
-            <hr>
-            <p class="card-text">Tis is a Tic Tac Toe simulation made in C&#43;&#43; which allows
-              users to play through the console.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-              </div>
-              <small class="text-body-secondary">C&#43;&#43;</small>
-            </div>
+
+      <div class="project" data-section="programming" data-priority="all:7,programming:2">
+        <div class="image-container">
+          <img src="./images/project_img/maze_python.jpg" alt="Maze Solver" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Maze Solver</h2>
+          <p class="project-tech"> Python <span>|</span> wxPython<span>|</span> Turtle Graphics <span>|</span> GUI
+            <span>|</span> Algorithms
+          </p>
+          <p class="project-desc">A maze-solving program in Python using Turtle graphics to visualize the process in
+            real-time. Implements DFS and BFS algorithms to find paths from start to finish.</p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/PythonMaze"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/mondrian_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Mondrian Composition &#8470;3</h4>
-            <hr>
-            <p class="card-text">This is a simple website which recreates a famous Mondrian Painting with code.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Mondrian-Painting"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-                <a href="https://tabbytadi.github.io/Mondrian-Painting/"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Live</a>
-              </div>
-              <small class="text-body-secondary">HTML&#44; CSS</small>
-            </div>
+
+      <div class="project" data-section="programming" data-priority="all:8,programming:3">
+        <div class="image-container">
+          <img src="./images/project_img/tictactoe_cplusplus.jpg" alt="Tic Tac Toe" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Tic Tac Toe</h2>
+          <p class="project-tech">C&#43;&#43; <span>|</span> Console <span>|</span> Game Logic </p>
+          <p class="project-desc">A 2 players console-based Tic Tac Toe game implemented in C&#43;&#43;. The game
+            announces a winner or a draw and demonstrates basic array manipulation, loops, and conditional logic in
+            C&#43;&#43;.
+          </p>
+          <div class="btn-group">
+            <a href=https://github.com/tabbytadi/TicTacToe/blob/main/tic_tac_toe.cpp
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
-      <div class="col mb-5 scroll-animate">
-        <div class="card">
-          <img src="./images/project_img/hangmanPython_project.jpg" class="bd-placeholder-img card-img-top" width="100%"
-            height="225" alt="Your Image">
-          <div class="card-body">
-            <h4> Hangman </h4>
-            <hr>
-            <p class="card-text">A cross-platform GUI application of a hangman game made with wxPython. </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
-                  class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px"
-                  target=”_blank”>Source</a>
-              </div>
-              <small class="text-body-secondary">Python</small>
-            </div>
+
+      <div class="project" data-section="programming" data-priority="all:9,programming:4">
+        <div class="image-container">
+          <img src="./images/project_img/hangman_python.jpg" alt="Hangman" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Hangman</h2>
+          <p class="project-tech">Python <span>|</span> wxPython <span>|</span> GUI <span>|</span> Game Logic
+          <p class="project-desc"> An interactive desktop Hangman game that loads words from a file, initializes the
+            first
+            and last letters, and tracks remaining attempts with included win/lose detection. Demonstrates event
+            handling,
+            GUI layout management, file-based word loading and state management.</p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/Hangman-Python/tree/main"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MULTITHREADING -->
+      <div class="project" data-section="multithreading" data-priority="all:10,multithreading:1">
+        <div class="image-container">
+          <img src="./images/project_img/multhithreading.jpg" alt="Multithreading Project" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Multithreading Project</h2>
+          <p class="project-tech">Java <span>|</span> Multithreading <span>|</span> Console Application</p>
+          <p class="project-desc"> A Java console app simulating store sales with multithreading. Handles 10+ customers
+            concurrently across multiple threads, ensuring synchronized updates to inventory and smooth parallel
+            transaction processing.</p>
+          <div class="btn-group">
+            <a href="https://github.com/tabbytadi/Threaded-Sales-System-Java"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/UX DESIGN -->
+      <div class="project" data-section="design" data-priority="all:11,design:1">
+        <div class="image-container">
+          <img src="./images/project_img/pamphlet.jpg" alt="Pamphlet Design" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Pamphlet Design</h2>
+          <p class="project-tech">Illustrator <span>|</span> Photoshop <span>|</span> Figma</p>
+          <p class="project-desc">A pamphlet designed to communicate information clearly and
+            attractively, combining modern layout techniques with professional typography for maximum impact.
+          </p>
+          <div class="btn-group">
+            <a href="https://www.behance.net/gallery/234875053/Luxury-hotel-brochure"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-section="design" data-priority="all:12,design:2">
+        <div class="image-container">
+          <img src="./images/project_img/photoshop_fine-dining.jpg" alt="Photoshop Mockup" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Fine Dining Mockup</h2>
+          <p class="project-tech">Photoshop <span>|</span> Canva</p>
+          <p class="project-desc">A modern fine dining UI website design created in Photoshop, showcasing elegant design
+            and use of colors, highlighting brand identity.</p>
+          <div class="btn-group">
+            <a href="https://www.behance.net/gallery/234901223/Velour-Fine-Dining"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" data-section="design" data-priority="all:13,design:3">
+        <div class="image-container">
+          <img src="./images/project_img/login.jpg" alt="Login Screen Design" class="project-image">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Login Screen</h2>
+          <p class="project-tech">HTML <span>|</span> CSS <span>|</span> Web Design</p>
+          <p class="project-desc">A clean, modern and responsive login screen design optimized for user experience,
+            featuring
+            glassmorphism and balanced color schemes.</p>
+          <div class="btn-group">
+            <a href="https://www.behance.net/gallery/234907019/Login-HTML-CSS"
+              class="btn btn-sm btn-outline-light btn-hover color-purple" style="padding-top: 8px" target=”_blank”>View
+              Project</a>
           </div>
         </div>
       </div>
