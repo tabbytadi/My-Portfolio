@@ -315,6 +315,10 @@ a {
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
 
+.btn-view {
+  font-size: 20px;
+}
+
 
 @keyframes changeShape {
   0% {
@@ -759,13 +763,6 @@ a {
 }
 
 
-
-
-
-
-
-
-/* Project Section Styling */
 .projects-container {
   max-width: 1200px;
   margin: 0 auto;
