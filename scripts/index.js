@@ -286,4 +286,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+  const boxes = document.querySelectorAll('.box');
+  const extraContent = document.querySelector('.extra');
+  const readMoreCheckbox = document.querySelector('#btn');
+  const readMoreLabel = document.querySelector('label');
+
+  // Remember the "Read More" state between section switches
+  let isReadMoreChecked = false;
+
+  // ====== FUNCTION: UPDATE READ MORE STATE ======
+  function updateReadMoreState(section) {
+    if (section === 'all') {
+      // Show toggle button again
+      readMoreLabel.style.display = 'block';
+      readMoreCheckbox.style.display = 'block';
+
+      // Restore last checkbox state
+      readMoreCheckbox.checked = isReadMoreChecked;
+
+      if (readMoreCheckbox.checked) {
+        extraContent.style.display = 'block';
+        extraContent.classList.add('fade-in');
+      } else {
+        extraContent.style.display = 'none';
+        extraContent.classList.remove('fade-in');
+      }
+    } else {
+      // Hide toggle in filtered views, always show extra content
+      readMoreLabel.style.display = 'none';
+      readMoreCheckbox.style.display = 'none';
+      extraContent.style.display = 'block';
+      extraContent.classList.add('fade-in');
+    }
+  }
+
+
+  // ====== EVENT: READ MORE TOGGLE ======
+  readMoreCheckbox.addEventListener('change', () => {
+    isReadMoreChecked = readMoreCheckbox.checked;
+
+    if (isReadMoreChecked) {
+      extraContent.style.display = 'block';
+      extraContent.classList.add('fade-in');
+    } else {
+      extraContent.style.display = 'none';
+      extraContent.classList.remove('fade-in');
+    }
+  });
+
+
 });
