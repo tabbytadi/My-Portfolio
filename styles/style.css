@@ -86,6 +86,10 @@ body {
   background: var(--bg-secondary);
 }
 
+#projects {
+  position: relative;
+}
+
 span {
   color: var(--main-color);
 }
@@ -739,11 +743,12 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: -2rem;
+  margin-top: 3rem;
   margin-bottom: 4rem;
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
+  padding-top: 3rem;
 }
 
 .filter-btn {
@@ -803,17 +808,17 @@ a {
   background-clip: text;
   color: transparent;
   opacity: 0;
-  transform: translateY(-20px);
   transition: all 0.5s ease;
-  position: relative;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  right: 0;
   z-index: 100;
-  padding: 1rem 0 3rem 0;
   pointer-events: none;
 }
 
 .section-title.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .project {
