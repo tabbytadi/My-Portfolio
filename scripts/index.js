@@ -346,14 +346,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== FUNCTION: UPDATE READ MORE STATE ======
   function updateReadMoreState(section) {
-    const label = document.querySelector('.show-more-toggle');
+    const container = document.querySelector('.show-more-container');
+    const labelText = document.querySelector('.show-more-text');
     const checkbox = document.querySelector('#btn');
     
     if (section === 'all') {
       // Show toggle button again and sync with saved state
-      if (label) {
-        label.style.display = 'block';
-        label.textContent = isReadMoreChecked ? 'Show less' : 'Show more';
+      if (container) {
+        container.style.display = 'flex';
+      }
+      if (labelText) {
+        labelText.textContent = isReadMoreChecked ? 'Show less' : 'Show more';
       }
       if (checkbox) {
         checkbox.style.display = 'none';
@@ -361,8 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       // Hide toggle in filtered views
-      if (label) {
-        label.style.display = 'none';
+      if (container) {
+        container.style.display = 'none';
       }
       if (checkbox) {
         checkbox.style.display = 'none';
@@ -376,11 +379,12 @@ document.addEventListener('DOMContentLoaded', () => {
     readMoreCheckbox.addEventListener('change', () => {
       isReadMoreChecked = readMoreCheckbox.checked;
 
-      if (readMoreLabel) {
+      const labelText = document.querySelector('.show-more-text');
+      if (labelText) {
         if (isReadMoreChecked) {
-          readMoreLabel.textContent = 'Show less';
+          labelText.textContent = 'Show less';
         } else {
-          readMoreLabel.textContent = 'Show more';
+          labelText.textContent = 'Show more';
         }
       }
     });
