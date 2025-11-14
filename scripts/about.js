@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const scrollElements = document.querySelectorAll(".scroll-animate, .scroll-animate-side, .scroll-fade");
+  const themeToggle = document.getElementById('theme-toggle');
 
   const elementInView = (el, percentageScroll = 100) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -37,4 +38,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", handleScrollAnimation);
   handleScrollAnimation();
+
+
+
+  // Light Dark Theme toggle functionality
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateToggleText(savedTheme);
+  }
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateToggleText(newTheme);
+  }
+
+  function updateToggleText(theme) {
+    themeToggle.textContent = theme === 'light' ? '' : '';
+  }
+
+  themeToggle.addEventListener('click', toggleTheme);
+  initTheme();
 });
