@@ -546,20 +546,73 @@
   <section class="contact">
     <br id="contact">
     <h2 class="heading scroll-animate-side" style="text-align: center;">Contact <span>Me!</span></h2>
-    <form action="https://api.web3forms.com/submit" method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
       <div class="input-box">
         <input type="hidden" name="access_key" value="099d5400-e948-4bc8-8391-dfa421d616b4">
-        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-        <input type="text" class="form-control" name="email" id="email" placeholder="Your email">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        <input 
+          type="text" 
+          class="form-control" 
+          name="name" 
+          id="name" 
+          placeholder="Your name *" 
+          required
+          minlength="2"
+          maxlength="100"
+          autocomplete="name"
+          aria-label="Your full name"
+          title="Please enter your full name (at least 2 characters)">
+        <input 
+          type="email" 
+          class="form-control" 
+          name="email" 
+          id="email" 
+          placeholder="Your email *" 
+          required
+          autocomplete="email"
+          aria-label="Your email address"
+          title="Please enter a valid email address">
       </div>
 
       <div class="input-box">
-        <input type="text" class="form-control" name="telephone" id="telephone" placeholder="Mobile number">
-        <input type="text" class="form-control" name="subject" id="subject" placeholder="Email subject">
+        <input 
+          type="tel" 
+          class="form-control" 
+          name="telephone" 
+          id="telephone" 
+          placeholder="Mobile number (optional)"
+          minlength="10"
+          maxlength="20"
+          autocomplete="tel"
+          aria-label="Your phone number"
+          title="Please enter a valid phone number">
+        <input 
+          type="text" 
+          class="form-control" 
+          name="subject" 
+          id="subject" 
+          placeholder="Email subject *" 
+          required
+          minlength="3"
+          maxlength="200"
+          autocomplete="off"
+          aria-label="Email subject"
+          title="Please enter a subject (at least 3 characters)">
       </div>
 
-      <textarea class="form-control" name="message" id="message" cols="30" rows="6"
-        placeholder="Write your message"></textarea>
+      <textarea 
+        class="form-control" 
+        name="message" 
+        id="message" 
+        cols="30" 
+        rows="6"
+        placeholder="Write your message *"
+        required
+        minlength="10"
+        maxlength="5000"
+        aria-label="Your message"
+        title="Please enter your message (at least 10 characters)"></textarea>
+      <div class="form-status" id="form-status" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;"></div>
       <div id="zoomOnHover">
         <input type="submit" id="send-message" class="btn-hover color-purple scroll-scale-fade" value="Send Message">
       </div>

@@ -393,4 +393,101 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize the read more button state
   updateReadMoreState('all');
 
+
+  // ====== FORM VALIDATION & SUBMISSION ======
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', async function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      // Check form validity
+      if (!contactForm.checkValidity()) {
+        contactForm.classList.add('was-validated');
+        
+        // Show browser validation messages
+        contactForm.reportValidity();
+        
+        // Also show custom error message
+        formStatus.innerHTML = '<p class="error-message">✗ Please fill in all required fields correctly.</p>';
+        formStatus.style.display = 'block';
+        
+        // Focus on first invalid field
+        const firstInvalid = contactForm.querySelector(':invalid');
+        if (firstInvalid) {
+          firstInvalid.focus();
+        }
+        
+        // Auto-hide error after 5 seconds
+        setTimeout(() => {
+          formStatus.style.display = 'none';
+        }, 5000);
+        
+        return;
+      }
+
+      // Form is valid - submit via fetch
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+
+      // Show loading state
+      formStatus.innerHTML = '<p class="loading">Sending message...</p>';
+      formStatus.style.display = 'block';
+
+      // Disable submit button
+      const submitButton = contactForm.querySelector('#send-message');
+      submitButton.disabled = true;
+      submitButton.value = 'Sending...';
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+          },
+          body: json,
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200) {
+          // Success
+          formStatus.innerHTML = '<p class="success-message">✓ Message sent successfully! I\'ll get back to you soon.</p>';
+          contactForm.reset();
+          contactForm.classList.remove('was-validated');
+        } else {
+          // Error from API
+          formStatus.innerHTML = `<p class="error-message">✗ ${result.message || 'Something went wrong. Please try again.'}</p>`;
+        }
+      } catch (error) {
+        // Network error
+        console.error('Form submission error:', error);
+        formStatus.innerHTML = '<p class="error-message">✗ Network error. Please check your connection and try again.</p>';
+      } finally {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.value = 'Send Message';
+
+        // Auto-hide message after 8 seconds
+        setTimeout(() => {
+          formStatus.style.display = 'none';
+        }, 8000);
+      }
+    });
+
+    // Real-time validation feedback
+    const formInputs = contactForm.querySelectorAll('input, textarea');
+    formInputs.forEach(input => {
+      input.addEventListener('blur', function() {
+        if (contactForm.classList.contains('was-validated')) {
+          this.checkValidity();
+        }
+      });
+    });
+  }
+
 });
