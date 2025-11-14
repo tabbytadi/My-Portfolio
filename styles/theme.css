@@ -1,0 +1,99 @@
+:root,
+[data-theme="dark"] {
+  /* Dark theme (default) */
+  --bg-primary: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  --bg-secondary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --second-bg-color: #8baffe;
+  --main-color: #ad7acb;
+  --bg-color: #1f242d;
+  --text-primary: #e2e8f0;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --navbar-color: rgba(15, 23, 42, 0.9);
+  --card-bg: rgba(30, 41, 59, 0.8);
+  --card-border: #334155;
+  --card-border-input: #6d727a;
+  --accent-gradient: linear-gradient(to right, #818cf8, #f472b6);
+  --shadow-color: rgba(129, 140, 248, 0.6);
+  --toggle-bg: #1e293b;
+  --toggle-border: #334155;
+  --toggle-icon: "☀️";
+  --show-more-link: #1a73e8;
+  --show-more-link-hover: #185abc;
+  --show-more-bg-start: rgba(96, 165, 250, 0.15);
+  --show-more-bg-end: rgba(167, 139, 250, 0.12);
+  --show-more-bg-hover-start: rgba(96, 165, 250, 0.22);
+  --show-more-bg-hover-end: rgba(167, 139, 250, 0.18);
+  --show-more-border: rgba(96, 165, 250, 0.3);
+  --show-more-gradient-start: rgba(31, 36, 45, 0.6);
+  --show-more-gradient-end: rgba(31, 36, 45, 0);
+  
+  /* About page specific - dark theme */
+  --about-gray-bg: #1e293b;
+  --about-body-bg: #0f172a;
+  --about-hr-dots: #ad7acb;
+}
+
+[data-theme="light"] {
+  /* Light theme */
+  --bg-primary: linear-gradient(135deg, #ffffff 0%, #f9faf8 100%);
+  --bg-secondary: linear-gradient(135deg, #f3f3f3 0%, #f3f3f3 100%);
+  --second-bg-color: #8baffe;
+  --bg-color: #1f242d;
+  --main-color: #644385f5;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-tertiary: #334155;
+  --navbar-color: rgba(255, 255, 255, 0.8);
+  --card-bg: rgba(226, 232, 240, 0.8);
+  --card-border: #cbd5e1;
+  --card-border-input: #cbd5e1;
+  --accent-gradient: linear-gradient(to right, #4f46e5, #ec4899);
+  --shadow-color: rgba(79, 70, 229, 0.4);
+  --toggle-bg: #e2e8f0;
+  --toggle-border: #cbd5e1;
+  --toggle-icon: "🌙";
+  --show-more-link: #1a73e8;
+  --show-more-link-hover: #185abc;
+  --show-more-bg-start: rgba(96, 165, 250, 0.12);
+  --show-more-bg-end: rgba(147, 112, 219, 0.1);
+  --show-more-bg-hover-start: rgba(96, 165, 250, 0.18);
+  --show-more-bg-hover-end: rgba(147, 112, 219, 0.15);
+  --show-more-border: rgba(96, 165, 250, 0.25);
+  --show-more-gradient-start: rgba(249, 250, 251, 0.6);
+  --show-more-gradient-end: rgba(249, 250, 251, 0);
+  
+  /* About page specific - light theme */
+  --about-gray-bg: rgb(248, 249, 250);
+  --about-body-bg: #ffffff;
+  --about-hr-dots: #54406e;
+}
+
+/* Toggle Style - Shared across pages */
+.theme-toggle {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  background: var(--toggle-bg);
+  border: 1px solid var(--toggle-border);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  z-index: 1000;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+.theme-toggle::before {
+  content: var(--toggle-icon);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

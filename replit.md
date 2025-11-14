@@ -59,7 +59,10 @@ Preferred communication style: Simple, everyday language.
 
 **Theme System**:
 - Dual theme support (light/dark) using CSS custom properties
-- Theme toggle stored in data attributes on the document root
+- Shared theme architecture with centralized theme.css and theme.js files
+- Theme toggle button available on both index.html and about.html pages
+- Theme preference persists across pages via localStorage
+- Dark theme as default with data-theme="dark" attribute
 - Gradient backgrounds and accent colors adapt to theme selection
 - Shadow and border colors adjust for visual consistency across themes
 

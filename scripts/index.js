@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsContainer = document.querySelector('.projects-container');
   const projects = document.querySelectorAll('.project');
   const currentSectionTitle = document.getElementById('current-section');
-  const themeToggle = document.getElementById('theme-toggle');
 
   // Close hamburger menu when clicking on a nav link
   const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -288,31 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize with all projects in correct order
   reorderProjects('all');
 
-
-
-
-  // Light Dark Theme toggle functionality
-  function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    updateToggleText(savedTheme);
-  }
-
-  function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateToggleText(newTheme);
-  }
-
-  function updateToggleText(theme) {
-    themeToggle.textContent = theme === 'light' ? '' : '';
-  }
-
-  themeToggle.addEventListener('click', toggleTheme);
-  initTheme();
 
 
 
