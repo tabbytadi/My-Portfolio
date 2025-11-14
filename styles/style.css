@@ -26,9 +26,9 @@
   --toggle-icon: "☀️";
   --show-more-link: #1a73e8;
   --show-more-link-hover: #185abc;
-  --show-more-bg: rgba(26, 115, 232, 0.12);
-  --show-more-bg-hover: rgba(26, 115, 232, 0.18);
-  --show-more-border: rgba(255, 255, 255, 0.08);
+  --show-more-bg: rgba(255, 255, 255, 0.05);
+  --show-more-bg-hover: rgba(255, 255, 255, 0.1);
+  --show-more-border: rgba(255, 255, 255, 0.12);
   --show-more-gradient-start: rgba(31, 36, 45, 0.6);
   --show-more-gradient-end: rgba(31, 36, 45, 0);
 }
@@ -54,9 +54,9 @@
   --toggle-icon: "🌙";
   --show-more-link: #1a73e8;
   --show-more-link-hover: #185abc;
-  --show-more-bg: rgba(26, 115, 232, 0.08);
-  --show-more-bg-hover: rgba(26, 115, 232, 0.15);
-  --show-more-border: rgba(26, 115, 232, 0.2);
+  --show-more-bg: rgba(0, 0, 0, 0.03);
+  --show-more-bg-hover: rgba(0, 0, 0, 0.06);
+  --show-more-border: rgba(0, 0, 0, 0.1);
   --show-more-gradient-start: rgba(249, 250, 251, 0.6);
   --show-more-gradient-end: rgba(249, 250, 251, 0);
 }
@@ -998,34 +998,30 @@ a {
 .show-more-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 2rem;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
   background: var(--show-more-bg);
-  border: 1.5px solid var(--show-more-border);
-  border-radius: 9999px;
+  border: 1px solid var(--show-more-border);
+  border-radius: 24px;
   color: var(--show-more-link);
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 12px rgba(26, 115, 232, 0.12), 
-              0 1px 3px rgba(26, 115, 232, 0.08);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .show-more-toggle:hover {
   background: var(--show-more-bg-hover);
-  color: var(--show-more-link-hover);
-  border-color: var(--show-more-link);
-  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.25), 
-              0 3px 8px rgba(26, 115, 232, 0.15);
-  transform: translateY(-2px) scale(1.02);
+  border-color: var(--show-more-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .show-more-toggle:active {
-  transform: translateY(0) scale(0.98);
-  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.15);
+  transform: scale(0.97);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .show-more-toggle:focus-visible {
@@ -1038,10 +1034,11 @@ a {
 }
 
 .chevron-icon {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s ease;
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.85;
 }
 
 #btn:checked ~ .show-more-container .chevron-icon {
