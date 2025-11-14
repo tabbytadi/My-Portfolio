@@ -739,9 +739,11 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: -2rem;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 5;
 }
 
 .filter-btn {
@@ -794,7 +796,7 @@ a {
 
 .section-title {
   text-align: center;
-  margin: 2rem 0;
+  margin: 0;
   font-size: 2rem;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -803,6 +805,9 @@ a {
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.5s ease;
+  position: relative;
+  z-index: 10;
+  padding: 1rem 0 3rem 0;
 }
 
 .section-title.visible {
