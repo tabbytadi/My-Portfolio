@@ -157,6 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
       return priorityA - priorityB;
     });
 
+    // Get the extra wrapper (it stays outside projects-container as a sibling to the checkbox)
+    const extraWrapper = document.querySelector('.extra-wrapper');
+    const extraInner = extraWrapper ? extraWrapper.querySelector('.extra') : null;
+
     // Remove all projects from container
     projectsContainer.innerHTML = '';
 
@@ -181,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // Add regular projects
+      // Add regular projects to projects-container
       regularProjects.forEach(project => {
         projectsContainer.appendChild(project);
         setTimeout(() => {
@@ -189,19 +193,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
       });
 
-      // Create extra wrapper if there are extra projects
-      if (extraProjects.length > 0) {
-        const extraWrapper = document.createElement('div');
-        extraWrapper.className = 'extra';
+      // Add extra projects to the extra container (which stays outside projects-container)
+      if (extraInner && extraProjects.length > 0) {
+        extraInner.innerHTML = '';
         
         extraProjects.forEach(project => {
-          extraWrapper.appendChild(project);
+          extraInner.appendChild(project);
           setTimeout(() => {
             project.classList.add('fade-in-up');
           }, 100);
         });
-        
-        projectsContainer.appendChild(extraWrapper);
+      } else if (extraInner) {
+        // Clear extra container if no extra projects
+        extraInner.innerHTML = '';
       }
     } else {
       // For other sections, just add all visible projects normally
@@ -211,6 +215,11 @@ document.addEventListener('DOMContentLoaded', () => {
           project.classList.add('fade-in-up');
         }, 100);
       });
+      
+      // Clear extra container when in filtered view
+      if (extraInner) {
+        extraInner.innerHTML = '';
+      }
     }
   }
 
@@ -330,53 +339,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const boxes = document.querySelectorAll('.box');
   const readMoreCheckbox = document.querySelector('#btn');
-  const readMoreLabel = document.querySelector('label[for="btn"]');
+  const readMoreLabel = document.querySelector('.show-more-toggle');
 
   // Remember the "Read More" state between section switches
   let isReadMoreChecked = false;
 
   // ====== FUNCTION: UPDATE READ MORE STATE ======
   function updateReadMoreState(section) {
-    const extraContent = document.querySelector('.extra');
+    const label = document.querySelector('.show-more-toggle');
+    const checkbox = document.querySelector('#btn');
     
     if (section === 'all') {
-      // Show toggle button again
-      readMoreLabel.style.display = 'block';
-      readMoreCheckbox.style.display = 'block';
-
-      // Restore last checkbox state
-      readMoreCheckbox.checked = isReadMoreChecked;
-
-      if (extraContent) {
-        if (readMoreCheckbox.checked) {
-          extraContent.style.display = 'block';
-          extraContent.classList.add('fade-in');
-        } else {
-          extraContent.style.display = 'none';
-          extraContent.classList.remove('fade-in');
-        }
+      // Show toggle button again and sync with saved state
+      if (label) {
+        label.style.display = 'block';
+        label.textContent = isReadMoreChecked ? 'Show less' : 'Show more';
+      }
+      if (checkbox) {
+        checkbox.style.display = 'none';
+        checkbox.checked = isReadMoreChecked;
       }
     } else {
       // Hide toggle in filtered views
-      readMoreLabel.style.display = 'none';
-      readMoreCheckbox.style.display = 'none';
+      if (label) {
+        label.style.display = 'none';
+      }
+      if (checkbox) {
+        checkbox.style.display = 'none';
+      }
     }
   }
 
 
   // ====== EVENT: READ MORE TOGGLE ======
-  if (readMoreCheckbox) {
+  if (readMoreCheckbox && readMoreLabel) {
     readMoreCheckbox.addEventListener('change', () => {
       isReadMoreChecked = readMoreCheckbox.checked;
-      const extraContent = document.querySelector('.extra');
 
-      if (extraContent) {
+      if (readMoreLabel) {
         if (isReadMoreChecked) {
-          extraContent.style.display = 'block';
-          extraContent.classList.add('fade-in');
+          readMoreLabel.textContent = 'Show less';
         } else {
-          extraContent.style.display = 'none';
-          extraContent.classList.remove('fade-in');
+          readMoreLabel.textContent = 'Show more';
         }
       }
     });

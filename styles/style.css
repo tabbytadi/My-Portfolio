@@ -24,6 +24,10 @@
   --toggle-bg: #1e293b;
   --toggle-border: #334155;
   --toggle-icon: "☀️";
+  --show-more-link: #1a73e8;
+  --show-more-link-hover: #185abc;
+  --show-more-gradient-start: rgba(31, 36, 45, 0.2);
+  --show-more-gradient-end: rgba(31, 36, 45, 0);
 }
 
 
@@ -45,6 +49,10 @@
   --toggle-bg: #e2e8f0;
   --toggle-border: #cbd5e1;
   --toggle-icon: "🌙";
+  --show-more-link: #1a73e8;
+  --show-more-link-hover: #185abc;
+  --show-more-gradient-start: rgba(31, 31, 31, 0.2);
+  --show-more-gradient-end: rgba(31, 31, 31, 0);
 }
 
 img {
@@ -969,75 +977,85 @@ a {
 
 
 
-input[type="checkbox"] {
-  height: 2em;
-  display: block;
-  appearance: none;
+#btn {
+  display: none;
 }
 
-label {
+.show-more-toggle {
   position: relative;
-  padding: 1.2em 2.5em;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  cursor: pointer;
   display: block;
   text-align: center;
-  width: 200px;
-  margin: 2em auto;
-  border-radius: 50px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-  border: 2px solid transparent;
-  overflow: hidden;
+  margin: 0 auto 3rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--show-more-link);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-label::after {
+.show-more-toggle::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
   width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: -1;
+  height: 1px;
+  background: var(--show-more-link-hover);
+  transition: transform 0.2s ease;
 }
 
-label:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6);
+.show-more-toggle:hover {
+  color: var(--show-more-link-hover);
 }
 
-label:hover::after {
-  opacity: 1;
+.show-more-toggle:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
-label:active {
-  transform: translateY(-1px) scale(1.02);
-}
-
-label::before {
-  content: "✨ Show More Projects";
+.extra-wrapper {
   position: relative;
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.extra-wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--show-more-gradient-start), var(--show-more-gradient-end));
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
   z-index: 1;
 }
 
-input[type="checkbox"]:checked~label::before {
-  content: "🔼 Show Less";
-}
-
 .extra {
-  display: none;
+  overflow: hidden;
   opacity: 0;
   transition: opacity 0.4s ease;
+  position: relative;
+  z-index: 0;
 }
 
-input[type="checkbox"]:checked~.extra {
-  animation: fadeInSlide 0.4s ease forwards;
+#btn:checked ~ .extra-wrapper {
+  max-height: 10000px;
+}
+
+#btn:checked ~ .extra-wrapper .extra {
+  opacity: 1;
+}
+
+#btn:checked ~ .extra-wrapper::before {
+  opacity: 0;
 }
 
 .fade-in {
