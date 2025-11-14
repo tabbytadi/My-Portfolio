@@ -29,7 +29,7 @@
   --show-more-bg: rgba(26, 115, 232, 0.12);
   --show-more-bg-hover: rgba(26, 115, 232, 0.18);
   --show-more-border: rgba(255, 255, 255, 0.08);
-  --show-more-gradient-start: rgba(31, 36, 45, 0.2);
+  --show-more-gradient-start: rgba(31, 36, 45, 0.95);
   --show-more-gradient-end: rgba(31, 36, 45, 0);
 }
 
@@ -57,8 +57,8 @@
   --show-more-bg: rgba(26, 115, 232, 0.08);
   --show-more-bg-hover: rgba(26, 115, 232, 0.15);
   --show-more-border: rgba(26, 115, 232, 0.2);
-  --show-more-gradient-start: rgba(31, 31, 31, 0.2);
-  --show-more-gradient-end: rgba(31, 31, 31, 0);
+  --show-more-gradient-start: rgba(249, 250, 251, 0.95);
+  --show-more-gradient-end: rgba(249, 250, 251, 0);
 }
 
 img {
@@ -1046,8 +1046,13 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: linear-gradient(to bottom, var(--show-more-gradient-start), var(--show-more-gradient-end));
+  height: 80px;
+  background: linear-gradient(to bottom, 
+    var(--show-more-gradient-start) 0%, 
+    var(--show-more-gradient-start) 20%,
+    var(--show-more-gradient-end) 100%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   pointer-events: none;
   opacity: 1;
   transition: opacity 0.3s ease;
