@@ -748,7 +748,7 @@ a {
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .filter-btn {
@@ -810,7 +810,7 @@ a {
   opacity: 0;
   transition: all 0.5s ease;
   position: absolute;
-  top: 1rem;
+  top: 3.5rem;
   left: 0;
   right: 0;
   z-index: 100;
