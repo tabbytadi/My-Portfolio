@@ -1035,7 +1035,7 @@ a {
 
 .extra-wrapper {
   position: relative;
-  max-height: 40px;
+  max-height: 100px;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
@@ -1046,7 +1046,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 60px;
   background: linear-gradient(to bottom, var(--show-more-gradient-start), var(--show-more-gradient-end));
   pointer-events: none;
   opacity: 1;
