@@ -248,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize with all projects in correct order
   reorderProjects('all');
-  updateReadMoreState('all');
 
 
 
@@ -331,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const boxes = document.querySelectorAll('.box');
   const readMoreCheckbox = document.querySelector('#btn');
-  const readMoreLabel = document.querySelector('label');
+  const readMoreLabel = document.querySelector('label[for="btn"]');
 
   // Remember the "Read More" state between section switches
   let isReadMoreChecked = false;
@@ -383,5 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Initialize the read more button state
+  updateReadMoreState('all');
 
 });
