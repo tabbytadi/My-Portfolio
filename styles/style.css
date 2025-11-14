@@ -321,6 +321,8 @@ a {
   align-items: center;
   justify-content: center;
   line-height: 1;
+  padding: 0.5em 1em;
+  min-height: 40px;
 }
 
 
