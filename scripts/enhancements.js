@@ -25,71 +25,6 @@ function initGlassmorphicNav() {
   });
 }
 
-// ==================== CUSTOM CURSOR ====================
-function initCustomCursor() {
-  // Only on desktop
-  if (window.innerWidth < 768) return;
-
-  const cursor = document.createElement('div');
-  cursor.className = 'custom-cursor';
-  const cursorTrail = document.createElement('div');
-  cursorTrail.className = 'custom-cursor-trail';
-
-  document.body.appendChild(cursor);
-  document.body.appendChild(cursorTrail);
-  document.body.classList.add('custom-cursor-enabled');
-
-  let mouseX = 0, mouseY = 0;
-  let cursorX = 0, cursorY = 0;
-  let trailX = 0, trailY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursor.classList.add('active');
-    cursorTrail.classList.add('active');
-  });
-
-  document.addEventListener('mouseleave', () => {
-    cursor.classList.remove('active');
-    cursorTrail.classList.remove('active');
-  });
-
-  // Hover effect on interactive elements
-  const hoverElements = document.querySelectorAll('a, button, .btn-hover, .filter-btn');
-  hoverElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.classList.add('cursor-hover');
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.classList.remove('cursor-hover');
-    });
-  });
-
-  // Smooth cursor animation
-  function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.3;
-    cursorY += (mouseY - cursorY) * 0.3;
-    trailX += (mouseX - trailX) * 0.15;
-    trailY += (mouseY - trailY) * 0.15;
-
-    cursor.style.transform = `translate(${cursorX - 10}px, ${cursorY - 10}px)`;
-    cursorTrail.style.transform = `translate(${trailX - 20}px, ${trailY - 20}px)`;
-
-    requestAnimationFrame(animateCursor);
-  }
-  animateCursor();
-
-  // Handle window resize
-  window.addEventListener('resize', () => {
-    if (window.innerWidth < 768) {
-      cursor.remove();
-      cursorTrail.remove();
-      document.body.classList.remove('custom-cursor-enabled');
-    }
-  });
-}
-
 // ==================== BUTTON RIPPLE EFFECT ====================
 function initRippleEffect() {
   const buttons = document.querySelectorAll('.btn-hover');
@@ -243,7 +178,6 @@ function initSmoothScroll() {
 function initAllEnhancements() {
   initScrollProgress();
   initGlassmorphicNav();
-  initCustomCursor();
   initRippleEffect();
   initBackToTop();
   updateCopyrightYear();

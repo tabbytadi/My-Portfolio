@@ -2,15 +2,14 @@
 
 ## Overview
 
-This is a personal portfolio website for a frontend developer named Adelina. The site showcases skills, projects, and professional experiences through a multi-page static website. It's built as a client-side only application with no backend services, hosted on GitHub Pages. The portfolio features an interactive UI with scroll animations, theme switching capabilities, project filtering functionality, and premium UI/UX enhancements including glassmorphic navigation, custom cursor effects, and modern micro-interactions.
+This is a personal portfolio website for a frontend developer named Adelina. The site showcases skills, projects, and professional experiences through a multi-page static website. It's built as a client-side only application with no backend services, hosted on GitHub Pages. The portfolio features an interactive UI with scroll animations, theme switching capabilities, project filtering functionality, and premium UI/UX enhancements including glassmorphic navigation and modern micro-interactions.
 
 ## Recent Changes
 
-- **Premium UI/UX Enhancements** (November 2025): Implemented 10 modern enhancements across both pages:
+- **Premium UI/UX Enhancements** (November 2025): Implemented 9 modern enhancements across both pages:
   - Scroll progress indicator with gradient bar
   - Glassmorphic sticky navigation with blur background effect
   - Enhanced hover interactions (navigation links, social icons, skill badges)
-  - Custom cursor with gradient trail (desktop only, with proper fallbacks)
   - Button ripple effects on click
   - Gradient text headings with improved typography hierarchy
   - Enhanced footer with quick links, social media, mini contact form, and back-to-top button
@@ -70,7 +69,7 @@ Preferred communication style: Simple, everyday language.
 - Global styles use the Geologica font family from Google Fonts
 - Color theming implemented through CSS custom properties with fallbacks
 - Custom button hover effects and gradient backgrounds
-- Premium enhancements in enhancements.css for modern UI effects (glassmorphism, custom cursor, ripple effects)
+- Premium enhancements in enhancements.css for modern UI effects (glassmorphism, ripple effects, gradient text)
 
 **Theme System**:
 - Dual theme support (light/dark) using CSS custom properties
