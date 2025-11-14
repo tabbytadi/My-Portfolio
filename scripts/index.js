@@ -11,6 +11,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentSectionTitle = document.getElementById('current-section');
   const themeToggle = document.getElementById('theme-toggle');
 
+  // Close hamburger menu when clicking on a nav link
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+
+  if (navbarCollapse && navbarToggler) {
+    const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Close the menu if it's open
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      });
+    });
+  }
+
+  // Close hamburger menu when clicking outside
+  if (navbarCollapse && navbarToggler) {
+    document.addEventListener('click', (event) => {
+      const isClickInsideNav = navbarCollapse.contains(event.target);
+      const isClickOnToggler = navbarToggler.contains(event.target);
+      
+      // If menu is open and click is outside nav and toggler, close it
+      if (navbarCollapse.classList.contains('show') && !isClickInsideNav && !isClickOnToggler) {
+        navbarToggler.click();
+      }
+    });
+  }
+
 
 
   const elementInView = (el, percentageScroll = 100) => {

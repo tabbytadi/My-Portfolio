@@ -34,6 +34,10 @@ Preferred communication style: Simple, everyday language.
 - Mobile-first approach with viewport meta tags disabling user scaling
 - Bootstrap's responsive grid system handles layout breakpoints
 - Custom media queries in CSS files adjust layouts for different screen sizes
+- Mobile navigation (hamburger menu) with auto-close behavior:
+  - Menu closes when a navigation link is clicked
+  - Menu closes when clicking outside the menu area
+  - Enhanced visibility in dark mode with white icon (85% opacity)
 
 ### Development Environment
 
