@@ -1,3 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const yearElement = document.getElementById("year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 });
