@@ -240,11 +240,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Then reorder the visible projects
       reorderProjects(section);
+      
+      // Update the read more button visibility
+      updateReadMoreState(section);
     });
   });
 
   // Initialize with all projects in correct order
   reorderProjects('all');
+  updateReadMoreState('all');
 
 
 
