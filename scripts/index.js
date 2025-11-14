@@ -167,13 +167,51 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionTitle.textContent = sectionTitles[section];
     projectsContainer.appendChild(sectionTitle);
 
-    // Add projects back in sorted order
-    visibleProjects.forEach(project => {
-      projectsContainer.appendChild(project);
-      setTimeout(() => {
-        project.classList.add('fade-in-up');
-      }, 100);
-    });
+    // For "all" section, separate regular and extra projects
+    if (section === 'all') {
+      const regularProjects = [];
+      const extraProjects = [];
+      
+      visibleProjects.forEach(project => {
+        const priority = getProjectPriority(project, section);
+        if (priority < 5) {
+          regularProjects.push(project);
+        } else {
+          extraProjects.push(project);
+        }
+      });
+
+      // Add regular projects
+      regularProjects.forEach(project => {
+        projectsContainer.appendChild(project);
+        setTimeout(() => {
+          project.classList.add('fade-in-up');
+        }, 100);
+      });
+
+      // Create extra wrapper if there are extra projects
+      if (extraProjects.length > 0) {
+        const extraWrapper = document.createElement('div');
+        extraWrapper.className = 'extra';
+        
+        extraProjects.forEach(project => {
+          extraWrapper.appendChild(project);
+          setTimeout(() => {
+            project.classList.add('fade-in-up');
+          }, 100);
+        });
+        
+        projectsContainer.appendChild(extraWrapper);
+      }
+    } else {
+      // For other sections, just add all visible projects normally
+      visibleProjects.forEach(project => {
+        projectsContainer.appendChild(project);
+        setTimeout(() => {
+          project.classList.add('fade-in-up');
+        }, 100);
+      });
+    }
   }
 
   filterButtons.forEach(button => {
@@ -288,7 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const boxes = document.querySelectorAll('.box');
-  const extraContent = document.querySelector('.extra');
   const readMoreCheckbox = document.querySelector('#btn');
   const readMoreLabel = document.querySelector('label');
 
@@ -297,6 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ====== FUNCTION: UPDATE READ MORE STATE ======
   function updateReadMoreState(section) {
+    const extraContent = document.querySelector('.extra');
+    
     if (section === 'all') {
       // Show toggle button again
       readMoreLabel.style.display = 'block';
@@ -305,35 +344,40 @@ document.addEventListener('DOMContentLoaded', () => {
       // Restore last checkbox state
       readMoreCheckbox.checked = isReadMoreChecked;
 
-      if (readMoreCheckbox.checked) {
-        extraContent.style.display = 'block';
-        extraContent.classList.add('fade-in');
-      } else {
-        extraContent.style.display = 'none';
-        extraContent.classList.remove('fade-in');
+      if (extraContent) {
+        if (readMoreCheckbox.checked) {
+          extraContent.style.display = 'block';
+          extraContent.classList.add('fade-in');
+        } else {
+          extraContent.style.display = 'none';
+          extraContent.classList.remove('fade-in');
+        }
       }
     } else {
-      // Hide toggle in filtered views, always show extra content
+      // Hide toggle in filtered views
       readMoreLabel.style.display = 'none';
       readMoreCheckbox.style.display = 'none';
-      extraContent.style.display = 'block';
-      extraContent.classList.add('fade-in');
     }
   }
 
 
   // ====== EVENT: READ MORE TOGGLE ======
-  readMoreCheckbox.addEventListener('change', () => {
-    isReadMoreChecked = readMoreCheckbox.checked;
+  if (readMoreCheckbox) {
+    readMoreCheckbox.addEventListener('change', () => {
+      isReadMoreChecked = readMoreCheckbox.checked;
+      const extraContent = document.querySelector('.extra');
 
-    if (isReadMoreChecked) {
-      extraContent.style.display = 'block';
-      extraContent.classList.add('fade-in');
-    } else {
-      extraContent.style.display = 'none';
-      extraContent.classList.remove('fade-in');
-    }
-  });
+      if (extraContent) {
+        if (isReadMoreChecked) {
+          extraContent.style.display = 'block';
+          extraContent.classList.add('fade-in');
+        } else {
+          extraContent.style.display = 'none';
+          extraContent.classList.remove('fade-in');
+        }
+      }
+    });
+  }
 
 
 });
